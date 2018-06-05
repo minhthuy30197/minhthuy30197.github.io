@@ -1,0 +1,71 @@
+body {
+	margin: 20px auto;
+	max-width: 1000px;
+	font-size: 16px;
+	background-color: #808080ab;
+}
+
+#banner {
+	border: 2px solid white;
+	max-width: 100%;
+}
+
+.danhsach {
+	background-color: white;
+}
+
+#title {
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: Georgia;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: unset;
+	color: black;
+}
+ 
+a:hover {
+	color: red;
+	font-weight: bold;
+}
+
+.ao:hover {
+	opacity: 0.5;
+	width: 300px;
+}
+
+.ao {
+	margin-left: 125px;
+	margin-bottom: 30px;
+	width: 250px;
+	border-radius: 50%;
+	border: 2px solid #c14746;
+}
+
+.anhchitiet {
+	width: 400px;
+	border: 1px dashed #c14746;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.tensp {
+	text-transform: uppercase;
+	font-size: 2em;
+	text-align: center;
+}
+
+.thongtin {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.footer {
+	height: 50px;
+	background-color: #c14746;
+}
+
