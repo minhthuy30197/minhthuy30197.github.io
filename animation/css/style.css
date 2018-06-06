@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.content {
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.col {
+	width: 33.333333%;
+	float: left;
+	padding: 15px;
+}
+
+.thumb {
+	border: 1px solid #eceaea;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.thumb img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.name {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.title {
+	text-transform: uppercase;
+	padding: 10px;
+	text-align: center;
+	font-size: 4vw;
+	letter-spacing: 3px;
+}
+
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+
+h1 {
+	animation: title 5s ease infinite;
+}
+
+.transition1 {
+	transition: opacity 1s linear, box-shadow 1s linear, transform 1s linear;
+}
+
+.transition1:hover{
+	transform: translate(0px, 5px);
+	box-shadow: 0 5px 5px grey;
+	opacity: 0.5;
+}
+
+.transition2 img{
+	transition: transform 1s linear;
+}
+
+.transition2:hover img {
+	transform: scale(1.2);
+	opacity: 0.8;
+}
+
+.clear {
+	clear: both;
+}
+
+@keyframes author {
+	0%  {margin-right: -400px; color: black;}
+    40%  {margin-right: 5%; color: black;}
+    70%  {margin-right: 5%; color: black;}
+    100% {margin-right: 55%; color: white}
+}
+
+.author {
+	font-weight: bold;
+	animation: author 4s ease infinite;
+	float: right;
+}
+
