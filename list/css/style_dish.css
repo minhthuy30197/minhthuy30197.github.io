@@ -1,3 +1,8 @@
+.name_dish a {
+	color: #72cdce;
+	text-decoration: none;
+}
+
 .detail_dish {
 	width: 80%;
 	margin-left: 10%;
@@ -71,4 +76,5 @@
 	background-color: #404040;
 	color: white;
 }
+
 
