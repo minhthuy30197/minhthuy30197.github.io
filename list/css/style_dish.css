@@ -1,0 +1,74 @@
+.detail_dish {
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+
+.img_dish {
+	width: 30%;
+	float: left;
+}
+
+.info_dish {
+	padding: 5%;
+	width: 70%;
+	float: left;
+	text-align: justify;
+}
+
+.card {
+	overflow: hidden;
+	border: 1px solid lightgrey;
+	padding: 2px;
+	box-shadow: 1px 1px 10px #72cdce;
+}
+
+.card img {
+	width: 100%;
+	vertical-align: middle;
+	transition: transform 1s linear;
+}
+
+.card:hover img {
+	transform: scale(1.5);
+}
+
+.btn_dathang {
+	padding: 0.5vw;
+	border-radius: 0.2vw;
+	background-color: #72cdce;
+	display: inline-block;
+	text-align: center;
+	font-size: 1vw;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.name_dish {
+	color: #72cdce;
+	font-family: courier new;
+	font-size: 2vw;
+	margin-bottom: 2%;
+}
+
+.detail_info {
+	list-style-position: inside;
+}
+
+.detail_info li {
+	line-height: 2vw;
+	color: #404040;
+	font-size: 1.2vw;
+	font-family: courier new;
+}
+
+.btn {
+	list-style-type: none;
+}
+
+.btn_dathang:hover {
+	background-color: #404040;
+	color: white;
+}
+
