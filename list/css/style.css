@@ -3,6 +3,7 @@
 	padding: 0;
 	border: 0;
 	box-sizing: border-box;
+	font-family: 'IBM Plex Mono', monospace;
 }
 
 .banner {
@@ -33,7 +34,6 @@
 	color: #e0dfdd;
 	font-size: 1.5vw;
 	font-weight: bold;
-	font-family: courier new;
 }
 
 .lv2 {
@@ -132,14 +132,12 @@
 	margin-left: 5%;
 	text-align: justify;
 	font-size: 1.2vw;
-	font-family: courier new;
 }
 
 .you_know {
 	color: #72cdce;
 	font-weight: bolder;
 	text-align: center;
-	font-family: courier new;
 	font-size: 2vw;
 }
 
@@ -150,8 +148,6 @@
 
 .digits img {
 	width: 100%;
-	left: 0;
-	top: 0;
 }
 
 .detail {
@@ -178,7 +174,6 @@
 	padding: 2%;
 	font-weight: bolder;
 	text-align: center;
-	font-family: courier new;
 	font-size: 1.8vw;
 }
 
@@ -209,7 +204,6 @@
 	height: 30%;
 	font-size: 1.5vw;
 	font-weight: bolder;
-	font-family: courier new;
 }
 
 .icon img {
@@ -250,7 +244,6 @@
 }
 
 .description {
-	font-family: courier new;
 	font-size: 1.5vw;
 	color: #72cdce;
 	font-weight: bolder;
@@ -259,7 +252,6 @@
 .title_dishes {
 	text-align: center;
 	color: #404040;
-	font-family: courier new;
 	font-size: 2vw;
 	margin-top: 5%;
 }
@@ -271,7 +263,6 @@
 }
 
 .let_contact {
-	font-family: courier new;
 	font-size: 1.2vw;
 	color: #404040;
 }
@@ -328,13 +319,42 @@
 }
 
 .footer {
+	position: relative;
 	margin-top: 5%;
 	width: 100%;
+	text-align: center;
 }
 
 .footer img {
 	width: 100%;
 	vertical-align: middle;
+}
+
+.icon_contact {
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 70%;
+	left: 0;
+	color: white;
+}
+
+.icon_contact1 {
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 0;
+	color: #404040;
+}
+
+i {
+	font-size: 3vw;
+	margin: 1%;
+}
+
+i:hover {
+	color: #72cdce;
 }
 
 .thumb a {
@@ -369,4 +389,8 @@
 .detail_promotion img {
 	width: 100%;
 }
+
+
+
+
 

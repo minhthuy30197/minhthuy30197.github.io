@@ -52,7 +52,6 @@
 
 .name_dish {
 	color: #72cdce;
-	font-family: courier new;
 	font-size: 2vw;
 	margin-bottom: 2%;
 }
@@ -65,7 +64,6 @@
 	line-height: 2vw;
 	color: #404040;
 	font-size: 1.2vw;
-	font-family: courier new;
 }
 
 .btn {
