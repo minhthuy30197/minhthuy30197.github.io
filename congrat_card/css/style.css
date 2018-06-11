@@ -9,77 +9,33 @@ body {
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
-	background-image: url('../images/bg.jpg');
-	background-repeat: no-repeat;
+}
+
+.img-bg {
+	width: 100%;
+	height: 100%;
+	position:  absolute;
+}
+
+.img-bg img {
+	width: 100%;
+	height:  100%;
 }
 
 .bg {
-	margin-top: 15%;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	width: 100%;
+	height: 70%;
+}
+
+.wrap {
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 500px;
 	text-align: center;
-}
-
-.gift {
-	animation: gift 6s ease 1;
-	width: 100%;
-}
-
-@keyframes gift {
-	0%  { 
-		content:url('../images/newgift.png');
-	}
-	20%  { 
-		transform:translate(200px,0px); 
-		content:url('../images/newgift.png');
-	}
-	24%  { 
-		transform:translate(-200px,0px); 
-		content:url('../images/newgift.png');
-	}
-	28%  { 
-		transform:translate(120px,0px); 
-		content:url('../images/newgift.png');
-	}
-	32%  { 
-		transform:translate(-120px,0px); 
-		content:url('../images/newgift.png');
-	}
-	40%  { 
-		transform:translate(50px,0px); 
-		content:url('../images/newgift.png');
-	}
-	48%  { 
-		transform:translate(-50px,0px);
-		content:url('../images/newgift.png');
-	}
-	55% {
-		transform:translate(0px,0px); 
-		content:url('../images/newgift.png');
-	}
-	65%  { 
-		transform:rotateX(30deg);
-		content:url('../images/newgift.png');
-	}
-	70%  { 
-		transform:rotateX(-30deg);
-		content:url('../images/newgift.png');
-	}
-	76%  { 
-		transform:rotateX(40deg);
-		content:url('../images/newgift.png');
-	}
-	85%  { 
-		transform:rotateX(50deg);
-		content:url('../images/newgift.png');
-	}
-	95%  { 
-		content:url('../images/gift3.png');
-	}
-	100%  { 
-		display: none;
-	}
+	height:  100%;
 }
 
 .hpny {
@@ -90,7 +46,7 @@ body {
 	font-family: Lucida Handwriting;
 	letter-spacing: 2px;
 	animation: hpny 6s ease infinite;
-	animation-delay: 6s;
+	animation-delay: 1s;
 }
 
 @keyframes hpny {
@@ -130,7 +86,7 @@ body {
 	color: transparent;
 	font-family: Courier New;
 	animation: year 2s ease infinite;
-	animation-delay: 6s;
+	animation-delay: 1s;
 }
 
 @keyframes year{
@@ -152,8 +108,7 @@ body {
 	color: white;
 	font-size: 2vw;
 	font-family: Courier New;
-	animation: congrat 4s ease 1;
-	animation-delay: 6s;
+	animation: congrat 6s ease 1;
 }
 
 @keyframes congrat{
