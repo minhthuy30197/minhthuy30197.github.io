@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="cal_body">
+		<div class="cal_inside">
+			<div class="operation">
+				<p id="content_operation"><br></p>
+			</div>
+			<div class="answer">
+				<input type="text" readonly="" id="operation">
+			</div>
+			<div class="btn_group">
+				<div class="btn">
+					<button title ="Exp" id="btn_exp" value="e^(" onclick="display(this)">Exp</button>
+				</div>
+				<div class="btn">
+					<button title = "(" id="btn_open" value="&#40;" onclick="display(this)">&#40;</button>
+				</div>
+				<div class="btn">
+					<button title = ")"  id="btn_close" value="&#41;" onclick="display(this)">&#41;</button>
+				</div>
+				<div class="btn">
+					<button title = "Phần trăm" id="btn_pt" value="% " onclick="display(this)">%</button>
+				</div>
+				<div class="btn">
+					<button title = "Xóa" id="btn_reset" onclick="reset()">Reset</button>
+				</div>
+				<div class="btn">
+					<button title = "ln" id="btn_ln" value="ln(" onclick="display(this)">ln</button>
+				</div>
+				<div class="btn">
+					<button title = "7" id="btn_7" value="7" onclick="display(this)">7</button>
+				</div>
+				<div class="btn">
+					<button title = "8" id="btn_8" value="8" onclick="display(this)">8</button>
+				</div>
+				<div class="btn">
+					<button title = "9" id="btn_9" value="9" onclick="display(this)">9</button>
+				</div>
+				<div class="btn">
+					<button title = "Cộng" id="btn_cong" value=" + " onclick="display(this)">+</button>
+				</div>
+				<div class="btn">
+					<button title = "log" id="btn_log" value="log(" onclick="display(this)">log</button>
+				</div>
+				<div class="btn">
+					<button title = "4" id="btn_4" value="4" onclick="display(this)">4</button>
+				</div>
+				<div class="btn">
+					<button title = "5" id="btn_5" value="5" onclick="display(this)">5</button>
+				</div>
+				<div class="btn">
+					<button title = "6" id="btn_6" value="6" onclick="display(this)">6</button>
+				</div>
+				<div class="btn">
+					<button title = "Trừ" id="btn_tru" value=" - " onclick="display(this)">-</button>
+				</div>
+				<div class="btn">
+					<button title = "Căn" id="btn_can" value="&#8730;&#40;" onclick="display(this)">&#8730;</button>
+				</div>
+				<div class="btn">
+					<button title = "1" id="btn_1" value="1" onclick="display(this)">1</button>
+				</div>
+				<div class="btn">
+					<button title = "2" id="btn_2" value="2" onclick="display(this)">2</button>
+				</div>
+				<div class="btn">
+					<button title = "3" id="btn_3" value="3" onclick="display(this)">3</button>
+				</div>
+				<div class="btn">
+					<button title = "Nhân" id="btn_nhan" value=" x " onclick="display(this)">x</button>
+				</div>
+				<div class="btn">
+					<button title = "Bình phương" id="btn_binhphuong" value="^2 " onclick="display(this)">^2</button>
+				</div>
+				<div class="btn">
+					<button title = "0" id="btn_0" value="0" onclick="display(this)">0</button>
+				</div>
+				<div class="btn">
+					<button title = "." id="btn_cham" value="." onclick="display(this)">.</button>
+				</div>
+				<div class="btn">
+					<button title = "Tính toán" id="btn_bang" onclick="calculate()">=</button>
+				</div>
+				<div class="btn">
+					<button title = "Chia" id="btn_chia" value=" &#247; " onclick="display(this)">&#247;</button>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
