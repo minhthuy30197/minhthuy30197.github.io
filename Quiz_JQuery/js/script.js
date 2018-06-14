@@ -1,4 +1,4 @@
-var count_theme = 1;
+var count_theme = 0;
 var localStorage = window.localStorage;
 var quizz = [
 {
