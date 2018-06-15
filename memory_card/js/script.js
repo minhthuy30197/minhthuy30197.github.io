@@ -104,7 +104,6 @@ function flipCard(card) {
 function start() {
 	$('.dialog_start').hide();
 	$('.card').css('pointer-events', 'auto');
-	document.getElementById('start-music').play();
 	run = setInterval(function() {
 		time--;
 		$('#timer').attr('value', time);
