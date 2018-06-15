@@ -28,12 +28,110 @@ html, body {
 	vertical-align: middle;
 }
 
+.dialog_start {
+	position: fixed;
+	animation: 3s start_dialog ease 1;
+	top: 20%;
+	width: 30%;
+	left: 35%;
+	opacity: 0.9;
+	background-color: #eee;
+	z-index: 2;
+	border-radius: 10px;
+	padding: 2%;
+}
+
+.content {
+	width: 100%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.content img {
+	width: 100%;
+}
+
+.lose_dialog, .congrat_dialog {
+	animation: 3s start ease 1;
+	position: fixed;
+	top: 20%;
+	width: 30%;
+	left: 35%;
+	opacity: 0.9;
+	background-color: #eee;
+	z-index: 2;
+	border-radius: 10px;
+	padding: 2%;
+}
+
+.content {
+	width: 100%;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.img_content1 {
+	width:60%;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.content img {
+	width: 100%;
+}
+
+.dialog_start button, .replay {
+	padding: 5px;
+	background: green;
+	border-radius: 5px;
+	width: 20%;
+	color: white;
+	font-size: 1.2em;
+}
+
+.dialog_start button:hover, .lose_dialog button:hover, .congrat_dialog button:hover {
+	box-shadow: 0 0 10px 5px gray;
+}
+
+@keyframes start_dialog {
+	0% {	
+		display: none;
+	}
+	50% {
+		margin-top: -500%;	
+	}
+	100% {
+		margin-top: 0;	
+	}
+}
+
+.timer {
+	position: absolute;
+	top: 0;
+	width: 70%;
+	left: 15%;
+	height: 10%;
+	animation: 2s start ease 1;
+	padding: 2%;
+}
+
+.timer progress {
+	width: 100%;
+	opacity: 0.8;
+}
+
+progress[value] {
+	background-color: #eee;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
 .wrapper {
 	width: 70%;
 	position: absolute;
 	left: 15%;
-	top: 5%;
-	height: 95%;
+	top: 10%;
+	height: 90%;
 }
 
 .thumb {
@@ -82,12 +180,12 @@ html, body {
 }
 
 .card.flipped .front {
-    transform: rotateY(0deg);
-    box-shadow: 0 0 10px 5px white;
+	transform: rotateY(0deg);
+	box-shadow: 0 0 10px 5px white;
 }
 
 .card.flipped .back {
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .snowflake {

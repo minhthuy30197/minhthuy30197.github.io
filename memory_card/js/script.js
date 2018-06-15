@@ -7,12 +7,20 @@ var cards = [
 ];
 
 var current = null;
+var time = 30;
+var count = 0;
+var run = null;
 
 window.onload = function() {
 	var imgArr = makeImgArray();
 	shuffle(imgArr);
-	console.log(imgArr);
 	drawImg(imgArr);
+	$('#timer').attr('max', time);
+	$('#timer').attr('value', time);
+	$('#info_time').text('Time: ' + time + ' seconds');
+	$('.card').css('pointer-events', 'none');
+	$('.congrat_dialog').hide();
+	$('.lose_dialog').hide();
 }
 
 function makeImgArray() {
@@ -67,7 +75,15 @@ function flipCard(card) {
 					$(current).css('opacity', '0');
 					$(card).css('opacity', '0');
 					current = null;
-				}, 1000);
+					count++;
+					if (count == cards.length && time != 0) {
+						clearInterval(run);
+						$('.congrat_dialog').show();
+						setTimeout(function() {
+							document.getElementById('victory-music').play();
+						}, 500);
+					}
+				}, 800);
 			}
 			else {
 				$(current).find('.front').css('box-shadow','0 0 10px 5px red');
@@ -79,9 +95,32 @@ function flipCard(card) {
 					$(current).find('.front').css('box-shadow','0 0 10px 5px white');
 					$(card).find('.front').css('box-shadow', '0 0 10px 5px white');
 					current = null;
-				}, 1000);
+				}, 800);
 			} 
 		} 
 	}
 }
+
+function start() {
+	$('.dialog_start').hide();
+	$('.card').css('pointer-events', 'auto');
+	document.getElementById('start-music').play();
+	run = setInterval(function() {
+		time--;
+		$('#timer').attr('value', time);
+		if (time == 0)  {
+			$('.card').css('pointer-events', 'none');
+			clearInterval(run);
+			$('.lose_dialog').show();
+			setTimeout(function() {
+				document.getElementById('gameover-music').play();
+			}, 1000);
+		}
+	}, 1000);
+}
+
+function replay() {
+	window.location.href = "index.html";
+}
+
 
