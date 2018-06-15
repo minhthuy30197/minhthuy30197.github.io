@@ -6,9 +6,12 @@ var cards = [
 'images/card5.jpg'
 ];
 
+var current = null;
+
 window.onload = function() {
 	var imgArr = makeImgArray();
 	shuffle(imgArr);
+	console.log(imgArr);
 	drawImg(imgArr);
 }
 
@@ -24,9 +27,9 @@ function makeImgArray() {
 function drawImg(imgArr) {
 	for (var i=0; i<imgArr.length; i++) {
 		$('.wrapper').append('<div class="thumb">'+
-			'<div class="card" onclick="flipCard(this)">'+
+			'<div class="card" onclick="flipCard(this)" data-name="'+imgArr[i]+'">'+
 			'<div class="front">'+
-			'<img src="'+imgArr[i]+'" alt="card front" id="card'+i+'">'+
+			'<img src="'+imgArr[i]+'" alt="card front">'+
 			'</div>'+
 			'<div class="back">'+
 			'<img src="images/back.jpg" alt="card back">'+
@@ -51,7 +54,34 @@ function shuffle(array) {
 }
 
 function flipCard(card) {
-	if (!$(card).hasClass('flipped'))
+	if (!$(card).hasClass('flipped')) {
 		$(card).toggleClass('flipped');
+		if (current == null) {
+			current = $(card);
+		} else {
+			if ($(card).attr("data-name") == $(current).attr("data-name")) {
+				$(current).find('.front').css('box-shadow','0 0 10px 5px green');
+				$(card).find('.front').css('box-shadow', '0 0 10px 5px green');
+				setTimeout(function() {
+					document.getElementById('success-music').play();
+					$(current).css('opacity', '0');
+					$(card).css('opacity', '0');
+					current = null;
+				}, 1000);
+			}
+			else {
+				$(current).find('.front').css('box-shadow','0 0 10px 5px red');
+				$(card).find('.front').css('box-shadow', '0 0 10px 5px red');
+				setTimeout(function() {
+					document.getElementById('failed-music').play();
+					$(current).toggleClass('flipped');
+					$(card).toggleClass('flipped');
+					$(current).find('.front').css('box-shadow','0 0 10px 5px white');
+					$(card).find('.front').css('box-shadow', '0 0 10px 5px white');
+					current = null;
+				}, 1000);
+			} 
+		} 
+	}
 }
 
