@@ -89,8 +89,7 @@ form {
 
 .form_content input {
 	background-color: transparent;
-	border-bottom: 1px solid #caa278;
-	border-radius: 5px;
+	border-bottom: 1px solid #4d4c4c;
 	outline: none;
 	font-size: 1.2vw;
 	color: #4d4c4c;
@@ -100,6 +99,10 @@ form {
 	width: 100%;
 }
 
+.form_content input[type='date'] {
+	border: none;
+}
+
 .form_content input::placeholder { 
    color: #4d4c4c;
    font-family: sans-serif;
@@ -107,6 +110,7 @@ form {
 }
 
 .form_content input.btn {
+	border: none;
 	width: 30%;
 	height: 100%;
 	padding: 1%;
@@ -122,6 +126,7 @@ form {
 
 .group_birth, .group_gender {
 	width: 100%;
+	border-bottom: 1px solid #4d4c4c;
 }
 
 .group_birth label, .group_gender label {
