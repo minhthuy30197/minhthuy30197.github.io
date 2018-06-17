@@ -1,0 +1,27 @@
+.content {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	width: 60%;
+	height: 80%;
+}
+
+.congrat {
+	font-family: 'Italianno', cursive;
+	color: #94390a;
+	font-size: 5vw;
+}
+
+.info {
+	padding: 5%;
+	color: #94390a;
+}
+
+.info li p {
+	color: #4d4c4c;
+}
+
+
+.info li {
+	margin-bottom: 2%;
+}
