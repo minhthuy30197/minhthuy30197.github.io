@@ -74,7 +74,10 @@ body {
 	height: 100%;
 	border: 2px dashed #caa278;
 	border-left: none;
-	padding: 8%;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 4%;
+	padding-bottom: 4%;
 }
 
 form {
@@ -82,9 +85,8 @@ form {
 }
 
 .div10 {
-	height: 10%;
+	height: 11%;
 	width: 100%;
-	margin-bottom: 2%;
 }
 
 .form_content input {
@@ -142,6 +144,12 @@ form {
 .group_gender .combo {
 	float: left;
 	width: 25%;
+}
+
+.error {
+	font-size: 0.8vw;
+	color: red;
+	font-style: italic;
 }
 
 

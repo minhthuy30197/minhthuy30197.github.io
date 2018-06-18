@@ -17,9 +17,10 @@
 				<div class="space"></div>
 			</div>
 			<div class="form_content">
-				<form action="result.html">
+				<form action="result.html" id="form_register">
 					<div class="div10">
 						<input type="text" placeholder="Họ Tên" name="name" id="name">
+						<p class="error"></p>
 					</div>
 					<div class="div10">
 						<div class="group_birth">
@@ -27,6 +28,7 @@
 							<input type="date" name="birthday" id="birthday">
 							<div class="clear"></div>
 						</div>
+						<p class="error" id="error_date"></p>
 					</div>
 					<div class="div10">
 						<div class="group_gender">
@@ -45,15 +47,23 @@
 					</div>
 					<div class="div10">
 						<input type="text" placeholder="Địa chỉ" name="address" id="address">
+						<p class="error"></p>
 					</div>
 					<div class="div10">
 						<input type="text" placeholder="Điện thoại" name="phone" id="phone">
+						<p class="error"></p>
 					</div>
 					<div class="div10">
-						<input type=email placeholder="Email" name="email" id="email">
+						<input type="text" placeholder="Email" name="email" id="email">
+						<p class="error"></p>
 					</div>
 					<div class="div10">
 						<input type="password" placeholder="Mật khẩu" name="password" id="password">
+						<p class="error"></p>
+					</div>
+					<div class="div10">
+						<input type="text" placeholder="Facebook" name="facebook" id="facebook">
+						<p class="error"></p>
 					</div>
 					<div class="div10">
 						<input type="submit" class="btn" value="Đăng kí">
@@ -63,5 +73,55 @@
 			<div class="clear"></div>
 		</div>
 	</div>
+	<script src="js/jquery.js"></script>
 </body>
 </html>
+
+<script>
+	$('#form_register').on('submit', function () {
+		var flag = true;
+
+		//Validate name
+		if ($('#name').val().trim() == '') {
+			flag = false;
+			$('#name').next('p').text('Họ tên không để trống');
+		} else $('#name').next('p').text('');
+
+		//Validate birthday
+		if ($('#birthday').val() == '') {
+			flag = false;
+			$('#error_date').text('Ngày sinh không để trống');
+		} else $('#error_date').text('');
+
+		//Validate address
+		if ($('#address').val().trim() == '') {
+			flag = false;
+			$('#address').next('p').text('Địa chỉ không để trống');
+		} else $('#address').next('p').text('');
+
+		//Validate phone
+		if ($('#phone').val().match(/(09|01[2|6|8|9])+([0-9]{8})\b/g) == null) {
+			flag = false;
+			$('#phone').next('p').text('Điện thoại không hợp lệ');
+		} else $('#phone').next('p').text('');
+
+		//Validate email
+		if ($('#email').val().match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/) == null) {
+			flag = false;
+			$('#email').next('p').text('Email không hợp lệ');
+		} else $('#email').next('p').text('');
+
+		//Validate password
+		if ($('#password').val().length < 6 || $('#password').val().length > 30) {
+			flag = false;
+			$('#password').next('p').text('Password có độ dài từ 6 - 30 kí tự');
+		} else $('#password').next('p').text('');
+
+		//Validate facebook
+		if ($('#facebook').val().match(/(https?:\/\/)?([\w\.]*)facebook\.com\/([a-zA-Z0-9_.]*)$/) == null) {
+			flag = false;
+			$('#facebook').next('p').text('Link địa chỉ Facebook không hợp lệ');
+		} else $('#facebook').next('p').text('');
+		return flag;
+	});
+</script>
