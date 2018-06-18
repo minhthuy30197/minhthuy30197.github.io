@@ -9,30 +9,30 @@
 	clear: both;
 }
 
-body {
-	width: 100%;
+html, body {
 	height: 100%;
+	width: 100%;
 	font-family: 'Raleway', sans-serif;
 }
 
 .wrap {
 	width: 100%;
 	height: 100%;
-	overflow: auto;
+	background-color: #353541;
 	display: table;
 }
 
 .left {
-	width: 22%;
-	background-color: #353541;
-	float: left;
 	height: 100%;
+	float: left;
+	width: 22%;
 }
 
 .right {
+	height: 100%;
 	width: 78%;
 	float:left;
-	height: 100%;
+	background-color: white;
 }
 
 .avatar {
@@ -64,7 +64,7 @@ body {
 
 .info {
 	position: absolute;
- 	bottom: 6%;
+	bottom: 6%;
 	left: 10%;
 	color: white;
 	font-weight: lighter;
@@ -256,6 +256,12 @@ body {
 	font-size: 1.3vw;
 	padding-bottom: 0.8vw;
 	border-bottom: 1.5px solid #cccccc;
+	transition: hover 1s linear;
+}
+
+.fields li a {
+	text-decoration: none;
+	color: black;
 }
 
 .fields li.branding {
@@ -303,8 +309,15 @@ body {
 	font-size: 1.1vw;
 }
 
-.inputs input.message {
+.message {
 	height: 8vw;
+	width: 100%;
+	margin-top: 8%;
+	border: 1px solid #71717a;
+	padding: 0.6vw;
+	font-style: italic;
+	font-size: 1.1vw;
+	resize: none;
 }
 
 .btn {
@@ -381,3 +394,5 @@ body {
 	border-right: 1px solid #acacac;
 	border-left: 1px solid #acacac;
 }
+
+
