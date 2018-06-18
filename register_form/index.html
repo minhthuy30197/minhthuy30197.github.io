@@ -108,7 +108,7 @@
 		//Validate email
 		if ($('#email').val().match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/) == null) {
 			flag = false;
-			$('#email').next('p').text('Email không hợp lệ');
+			$('#email').next('p').text('Email không hợp lệ. Ví dụ: abc@gmail.com');
 		} else $('#email').next('p').text('');
 
 		//Validate password
@@ -120,7 +120,7 @@
 		//Validate facebook
 		if ($('#facebook').val().match(/(https?:\/\/)?([\w\.]*)facebook\.com\/([a-zA-Z0-9_.]*)$/) == null) {
 			flag = false;
-			$('#facebook').next('p').text('Link địa chỉ Facebook không hợp lệ');
+			$('#facebook').next('p').text('Facebook không hợp lệ. Ví dụ: https://www.facebook.com/abc');
 		} else $('#facebook').next('p').text('');
 		return flag;
 	});
