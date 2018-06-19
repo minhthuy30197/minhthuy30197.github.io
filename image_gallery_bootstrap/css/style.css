@@ -5,8 +5,9 @@
 	box-sizing: border-box;
 }
 
-.navbar-brand {
+.navbar-inverse .navbar-brand {
 	font-family: Lucida Handwriting;
+	color: white;
 }
 
 .navbar {
@@ -16,6 +17,146 @@
 	border-radius: 0;
 }
 
-.navbar ul li {
+.navbar-inverse .navbar-nav>li>a {
 	color: white;
 }
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: gray;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.thumbnail {
+	overflow: hidden;
+}
+
+.thumbnail img {
+	opacity: 0.7;
+	transition: transform 0.5s linear, opacity 0.5s linear;
+}
+
+.thumbnail:hover img{
+	transform: scale(1.2);
+	opacity: 1;
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	font-size: 1.5em;
+	font-family: Lucida Handwriting;
+}
+
+.footer {
+	margin-top: 20px;
+	border-top: 1px solid gray;
+	padding: 10px;
+	text-align: center;
+}
+
+@media (max-width: 500px) {
+	.container {
+		padding-left: 30px;
+		padding-right: 30px; 
+	}
+
+	.title {
+		margin-bottom: 20px;
+		margin-top: 30px;
+		font-size: 14px; 
+	}
+
+	.navbar-inverse .navbar-brand {
+		font-size: 14px;
+	}
+
+	.navbar-inverse .navbar-nav>li>a {
+		font-size: 12px;
+	}
+
+	.footer {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 500px) {
+	.container {
+		padding-left: 100px;
+		padding-right: 100px; 
+	}
+
+	.title {
+		margin-bottom: 30px;
+		margin-top: 50px;
+		font-size: 20px; 
+	}
+
+	.navbar-inverse .navbar-brand {
+		font-size: 18px;
+	}
+
+	.navbar-inverse .navbar-nav>li>a {
+		font-size: 14px;
+	}
+
+	.footer {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px; 
+	}
+
+	.title {
+		margin-bottom: 40px;
+		margin-top: 60px;
+		font-size: 24px; 
+	}	
+}
+
+@media (min-width: 992px) {
+	.title {
+		margin-bottom: 40px;
+		margin-top: 80px;
+		font-size: 28px; 
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1100px;
+	}
+
+	.title {
+		margin-bottom: 50px;
+		margin-top: 100px;
+		font-size: 32px; 
+	}
+
+	.navbar-inverse .navbar-brand {
+		font-size: 20px;
+	}
+
+	.navbar-inverse .navbar-nav>li>a {
+		font-size: 16px;
+	}
+
+	.footer {
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+
+
