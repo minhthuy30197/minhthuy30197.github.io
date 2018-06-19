@@ -1,0 +1,21 @@
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.navbar-brand {
+	font-family: Lucida Handwriting;
+}
+
+.navbar {
+	background-color: #615d5d;
+	margin-bottom: 0;
+	border: 0px;
+	border-radius: 0;
+}
+
+.navbar ul li {
+	color: white;
+}
