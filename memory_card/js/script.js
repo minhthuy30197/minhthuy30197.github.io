@@ -6,6 +6,8 @@ var cards = [
 'images/card5.jpg'
 ];
 
+var count_card = 0;
+
 var current = null;
 var time = 30;
 var count = 0;
@@ -62,11 +64,14 @@ function shuffle(array) {
 }
 
 function flipCard(card) {
+	if (count_card == 2) return;
 	if (!$(card).hasClass('flipped')) {
 		$(card).toggleClass('flipped');
 		if (current == null) {
 			current = $(card);
+			count_card++;
 		} else {
+			count_card++;
 			if ($(card).attr("data-name") == $(current).attr("data-name")) {
 				$(current).find('.front').css('box-shadow','0 0 10px 5px green');
 				$(card).find('.front').css('box-shadow', '0 0 10px 5px green');
@@ -76,6 +81,7 @@ function flipCard(card) {
 					$(card).css('opacity', '0');
 					current = null;
 					count++;
+					count_card = 0;
 					if (count == cards.length && time != 0) {
 						clearInterval(run);
 						$('.congrat_dialog').show();
@@ -95,6 +101,7 @@ function flipCard(card) {
 					$(current).find('.front').css('box-shadow','0 0 10px 5px white');
 					$(card).find('.front').css('box-shadow', '0 0 10px 5px white');
 					current = null;
+					count_card = 0;
 				}, 800);
 			} 
 		} 
