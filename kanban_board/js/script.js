@@ -1,3 +1,27 @@
+var TYPE_BOARD = ['to_do', 'doing', 'done'];
+
+var DB = {
+	getData: function() {
+		var data;
+		if (typeof(Storage) !== "undefined") {
+			try {
+				data = JSON.parse(localStorage.getItem("listtask")) || {};
+			} catch(error) {
+				data = {};
+			}
+
+		} else {
+			data = {};
+			alert('Sorry! No Web Storage support..');
+		}
+		return data;
+	},
+
+	setData: function(data) {
+		localStorage.setItem("listtask", JSON.stringify(data));
+	}
+}
+
 var app = {
 	add_task: function(e, type, input) {
 		var ev = window.event || e;
@@ -6,6 +30,9 @@ var app = {
 			if (task.trim() != '') {
 				this.add_to_list(type, task);
 				$(input).val('');
+				if (typeof list_task[type] == 'undefined') list_task[type] = [];
+				list_task[type].push(task);
+				DB.setData(list_task);
 			} else {
 				alert('Vui lòng nhập công việc!')
 			}
@@ -43,3 +70,20 @@ var app = {
 		})
 	}
 }
+
+var list_task = DB.getData();
+
+$( function() {
+	TYPE_BOARD.forEach(function(type) {
+		var list = list_task[type] || [];
+		list.forEach(function(task) {
+			app.add_to_list(type, task);
+		});
+	});
+
+	$( ".sortedlist" ).sortable({
+		connectWith: ".sortedlist",
+		placeholder: "ui-state-highlight"
+	});
+} );
+
