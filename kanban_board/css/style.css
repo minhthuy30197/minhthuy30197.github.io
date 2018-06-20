@@ -19,6 +19,14 @@ body {
 	position: relative;
 }
 
+.navbar.navbar-inverse .fix {
+	position: absolute;
+	right: 10px;
+	font-size: 1.5em;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .navbar.navbar-inverse .navbar-brand {
 	color: white;
 	opacity: 0.8;

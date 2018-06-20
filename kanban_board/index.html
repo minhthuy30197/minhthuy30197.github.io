@@ -18,13 +18,14 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top" >
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#">Kanban Board</a>
+			<span class="glyphicon glyphicon-cog fix" title="Click to set up Kanban" onclick="app.setup()"></span>
 		</div>
 	</nav>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 col-xs-12">
 				<div class="panel panel-default">
-					<div class="title">To Do</div>
+					<div class="title">To Do <span class="label label-danger" id="to_do_count">0</span></div>
 					<div class="panel-body">
 						<div class="add_task">
 							<div class="plus">
@@ -43,7 +44,7 @@
 			</div>
 			<div class="col-sm-4 col-xs-12">
 				<div class="panel panel-default">
-					<div class="title">Doing</div>
+					<div class="title">Doing <span class="label label-primary" id="doing_count">0</span></div>
 					<div class="panel-body">
 						<div class="add_task">
 							<div class="plus">
@@ -62,7 +63,7 @@
 			</div>
 			<div class="col-sm-4 col-xs-12">
 				<div class="panel panel-default">
-					<div class="title">Done</div>
+					<div class="title">Done <span class="label label-success" id="done_count">0</span></div>
 					<div class="panel-body">
 						<div class="add_task">
 							<div class="plus">
@@ -113,6 +114,36 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-success" data-dismiss="modal" id="change">Change</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="modal_setup" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h4 class="modal-title">Set up your Kanban</h4>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">Max to-do tasks</span>
+						<input id="max_to_do" type="number" class="form-control" min="1">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">Max doing tasks</span>
+						<input id="max_doing" type="number" class="form-control" min="1">
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon">Max done tasks</span>
+						<input id="max_done" type="number" class="form-control" min="1">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal" id="setup">Save</button>
 				</div>
 			</div>
 
