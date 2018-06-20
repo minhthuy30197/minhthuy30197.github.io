@@ -144,6 +144,8 @@ $( function() {
 			list_task[oldColumnType].splice(oldItemPosition, 1);
 			list_task[newColumnType].splice(newItemPosition, 0, ui.item.find('p').text());
 			DB.setData("listtask", list_task);
+			$('#'+oldColumnType+"_count").text(list_task[oldColumnType].length);
+			$('#'+newColumnType+"_count").text(list_task[newColumnType].length);
 		}
 	});
 });
