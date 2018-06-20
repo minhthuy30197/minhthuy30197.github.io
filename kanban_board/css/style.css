@@ -58,6 +58,12 @@ body {
 
 .funtion-btn {
 	text-align: right;
+	display: none;
+	transition: vi 10s linear;
+}
+
+.list-group-item:hover .funtion-btn{
+	display: block;
 }
 
 .funtion-btn a {
@@ -83,6 +89,11 @@ body {
 	width: 100%;
 	outline: none;
 	font-style: italic;
+}
+
+.sortedlist {
+	list-style-type: none;
+	min-height: 15px;
 }
 
 .clear {

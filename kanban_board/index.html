@@ -34,7 +34,7 @@
 							</div>
 							<div class="clear"></div>
 						</div>
-						<ul class="list-group sortedlist">
+						<ul class="list-group sortedlist" id="sortable1">
 							<li class="list-group-item">
 								<p class="content">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -75,7 +75,16 @@
 				<div class="panel panel-default">
 					<div class="title">Doing</div>
 					<div class="panel-body">
-						<ul class="list-group sortedlist">
+						<div class="add_task">
+							<div class="plus">
+								<span class="glyphicon glyphicon-plus"></span>
+							</div>
+							<div class="content_add">
+								<input type="text" id="new_task" placeholder="Type task and press Enter to add...">
+							</div>
+							<div class="clear"></div>
+						</div>
+						<ul class="list-group sortedlist" id="sortable2">
 							<li class="list-group-item">
 								<p class="content">
 									Cras justo odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quibusdam.
@@ -93,7 +102,16 @@
 				<div class="panel panel-default">
 					<div class="title">Done</div>
 					<div class="panel-body">
-						<ul class="list-group sortedlist">
+						<div class="add_task">
+							<div class="plus">
+								<span class="glyphicon glyphicon-plus"></span>
+							</div>
+							<div class="content_add">
+								<input type="text" id="new_task" placeholder="Type task and press Enter to add...">
+							</div>
+							<div class="clear"></div>
+						</div>
+						<ul class="list-group sortedlist" id="sortable3">
 							<li class="list-group-item">
 								<p class="content">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit consequatur facilis totam necessitatibus
@@ -123,7 +141,7 @@
 
 <script>
 	$( function() {
-		$( ".sortedlist" ).sortable({
+		$( "#sortable1, #sortable2, #sortable3" ).sortable({
 			connectWith: ".sortedlist"
 		});
 	} );
