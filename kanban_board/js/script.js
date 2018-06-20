@@ -31,8 +31,15 @@ var app = {
 		$('#task_need_change').val(item.text());
 		$('#modal_change').modal();
 		$('#change').on('click', function() {
-			item.text($('#task_need_change').val());
-			$('#modal_delete').hide();
+			var newTask = $('#task_need_change').val();
+			if (newTask.trim() == '') {
+				alert('Không thể thay đổi nội dung công việc vì nội dung bạn nhập trống');
+			}
+			else {
+				item.text(newTask);
+				$('.error').text('');
+				$('#modal_delete').hide();
+			}
 		})
 	}
 }
