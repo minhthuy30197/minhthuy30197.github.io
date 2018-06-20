@@ -34,8 +34,6 @@ var app = {
 					alert('Số lượng công việc ở cột '+type+' đã đạt đến giới hạn.\nĐể thêm công việc, vui lòng xóa bớt hoặc thay đổi trong mục cài đặt.');
 				} else {
 					this.add_to_list(type, task);
-					
-					if (typeof list_task[type] == 'undefined') list_task[type] = [];
 					list_task[type].push(task);
 					DB.setData("listtask", list_task);
 					$('#'+type+"_count").text(list_task[type].length);
@@ -121,6 +119,7 @@ $( function() {
 			app.add_to_list(type, task);
 		});
 		$('#'+type+"_count").text(list.length);
+		if (typeof list_task[type] == 'undefined') list_task[type] = [];
 	});
 
 	if (typeof setup.max_to_do == "undefined") setup.max_to_do = 10;
