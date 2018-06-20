@@ -47,7 +47,12 @@ var app = {
 	delete_task: function(span) {
 		var item = $(span).parent().parent().parent();
 		$('#modal_delete').modal();
+		$('#confirm_delete').off('click');
 		$('#confirm_delete').on('click', function() {
+			var type_board = item.parent().attr('id');
+			var pos = $('#'+ type_board + ' li').index(item);
+			list_task[type_board].splice(pos, 1);
+			DB.setData(list_task);
 			item.remove();
 			$('#modal_delete').hide();
 		})
@@ -57,14 +62,18 @@ var app = {
 		var item = $(span).parent().parent().parent().find('p');
 		$('#task_need_change').val(item.text());
 		$('#modal_change').modal();
+		$('#change').off('click');
 		$('#change').on('click', function() {
 			var newTask = $('#task_need_change').val();
 			if (newTask.trim() == '') {
 				alert('Không thể thay đổi nội dung công việc vì nội dung bạn nhập trống');
 			}
 			else {
+				var type_board = item.parent().parent().attr('id');
+				var pos = $('#'+ type_board + ' li').index(item.parent());
+				list_task[type_board][pos] = newTask;
+				DB.setData(list_task);
 				item.text(newTask);
-				$('.error').text('');
 				$('#modal_delete').hide();
 			}
 		})
