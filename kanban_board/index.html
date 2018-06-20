@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kanban board</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="plugins/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">Kanban Board</a>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-xs-12">
+				<div class="panel panel-default">
+					<div class="title">To Do</div>
+					<div class="panel-body">
+						<div class="add_task">
+							<div class="plus">
+								<span class="glyphicon glyphicon-plus"></span>
+							</div>
+							<div class="content_add">
+								<input type="text" id="new_task" placeholder="Type task and press Enter to add...">
+							</div>
+							<div class="clear"></div>
+						</div>
+						<ul class="list-group sortedlist">
+							<li class="list-group-item">
+								<p class="content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								</p>
+								<div class="funtion-btn">
+									<a><span class="glyphicon glyphicon-pencil"></span></a>
+									<a><span class="glyphicon glyphicon-trash"></span></a>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<p class="content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et autem atque magnam. Dignissimos velit temporibus similique eos vitae ducimus perferendis
+								</p>
+								<div class="funtion-btn">
+									<a><span class="glyphicon glyphicon-pencil"></span></a>
+									<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<p class="content">Morbi leo risus</p>
+								<div class="funtion-btn">
+									<a href=""><span class="glyphicon glyphicon-pencil"></span></a>
+									<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<p class="content">Porta ac consectetur ac</p>
+								<div class="funtion-btn">
+									<a href=""><span class="glyphicon glyphicon-pencil"></span></a>
+									<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="panel panel-default">
+					<div class="title">Doing</div>
+					<div class="panel-body">
+						<ul class="list-group sortedlist">
+							<li class="list-group-item">
+								<p class="content">
+									Cras justo odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, quibusdam.
+								</p>
+								<div class="funtion-btn">
+									<a href=""><span class="glyphicon glyphicon-pencil"></span></a>
+									<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="panel panel-default">
+					<div class="title">Done</div>
+					<div class="panel-body">
+						<ul class="list-group sortedlist">
+							<li class="list-group-item">
+								<p class="content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit consequatur facilis totam necessitatibus
+								</p>
+								<div class="funtion-btn">
+									<a href=""><span class="glyphicon glyphicon-pencil"></span></a>
+									<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<p class="content">
+									Dapibus ac facilisis in
+								</p>
+								<div class="funtion-btn">
+									<a href=""><span class="glyphicon glyphicon-pencil"></span></a>
+									<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+	$( function() {
+		$( ".sortedlist" ).sortable({
+			connectWith: ".sortedlist"
+		});
+	} );
+</script>

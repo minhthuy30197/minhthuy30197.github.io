@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #6a99b5;
+}
+
+.navbar.navbar-inverse {
+	background-color: rgba(51,51,51,0.15);
+	border: none;
+	border-radius: 0;
+}
+
+.navbar {
+	position: relative;
+}
+
+.navbar.navbar-inverse .navbar-brand {
+	color: white;
+	opacity: 0.8;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	font-family: 'Courgette', cursive;
+	font-size: 2em;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+.panel {
+	background-color: #d3dfeb;
+	border: none;
+	box-shadow: 4px 4px 10px gray;
+}
+
+.panel .panel-body {
+	padding: 8px;
+}
+
+.title {
+	padding: 5px;
+	font-size: 1.2em;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.list-group-item {
+	margin-bottom: 5px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 5px lightgray;
+}
+
+.funtion-btn {
+	text-align: right;
+}
+
+.funtion-btn a {
+	text-decoration: none;
+	color: gray;
+	padding: 3px;
+}
+
+.funtion-btn a:hover {
+	background-color: grey;
+	color: white;
+	border-radius: 2px;
+}
+
+.add_task {
+	margin-bottom: 5px;
+	background-color: white;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+#new_task {
+	width: 100%;
+	outline: none;
+	font-style: italic;
+}
+
+.clear {
+	clear: both;
+}
+
+.plus {
+	float: left;
+	width: 10%;
+	text-align: center;
+}
+
+.plus span {
+	color: #6a99b5;
+}
+
+.content_add {
+	float: left;
+	width: 90%;
+}
+
+@media (max-width: 800px) {
+	.navbar.navbar-inverse .navbar-brand {
+		font-size: 1.5em;
+	}	
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding-left: 80px;
+		padding-right: 80px; 
+	}
+
+	.navbar.navbar-inverse .navbar-brand {
+		font-size: 1.3em;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px; 
+	}
+
+	.panel {
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 300px) {
+	.navbar.navbar-inverse .navbar-brand {
+		font-size: 1em;
+	}
+}
+
+
