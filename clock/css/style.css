@@ -1,0 +1,264 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 20px;
+	background-color: #f0f0f0;
+}
+
+.round {
+	border-radius: 50%;
+	border: 1px solid #234a56;
+}
+
+.clock-outside {
+	position: relative;
+}
+
+.clock-parent {
+	width: 500px;
+	height: 500px;
+	background-color: #c1dee2;
+	margin: 50px auto;
+	padding: 20px;
+	box-shadow: 0px 0px 15px 1px gray;
+} 
+
+.clock-parent-in {
+	background-color: #417d95;
+}
+
+.clock-in {
+	width: 80%;
+	height: 80%;
+}
+
+.clock-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.numbers {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.number {
+	width: 100%;
+	position: absolute;
+	font-weight: bold;
+}
+
+.number-parent {
+	height: 22px;
+	top: calc(50% - 12px);
+	color: #234a56;
+}
+
+.numbers > .number:nth-child(1) {
+	-ms-transform: rotate(90deg); 
+	-webkit-transform: rotate(90deg); 
+	transform: rotate(90deg);
+}
+
+.numbers > .number:nth-child(2) {
+	-ms-transform: rotate(60deg); 
+	-webkit-transform: rotate(60deg); 
+	transform: rotate(60deg);
+}
+
+.numbers > .number:nth-child(3) {
+	-ms-transform: rotate(30deg); 
+	-webkit-transform: rotate(30deg); 
+	transform: rotate(30deg);
+}
+
+.numbers > .number:nth-child(4) {
+	-ms-transform: rotate(0deg); 
+	-webkit-transform: rotate(0deg); 
+	transform: rotate(0deg);
+}
+
+.numbers > .number:nth-child(5) {
+	-ms-transform: rotate(-30deg); 
+	-webkit-transform: rotate(-30deg); 
+	transform: rotate(-30deg);
+}
+
+.numbers > .number:nth-child(6) {
+	-ms-transform: rotate(-60deg); 
+	-webkit-transform: rotate(-60deg); 
+	transform: rotate(-60deg);
+}
+
+.left-num {
+	float: left;
+	transform: rotate(270deg);
+}
+
+.right-num {
+	float: right;
+	transform: rotate(270deg);
+}
+
+.clear {
+	clear: both;
+}
+
+.num-93 {
+	transform: rotate(0deg);
+}
+
+.clock-brand {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+}
+
+.rolex {
+	color: white;
+	font-size: 50px;
+	font-family: 'Great Vibes', cursive;
+}
+
+.center-point {
+	width: 15px;
+	height: 15px;
+	background-color: #234a56;
+	z-index: 2;
+}
+
+.clockwise {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	transform-origin: left;
+	background-color: #234a56;
+	height: 4px;
+	z-index: 2;
+}
+
+.minutes-parent {
+	width: 110px;
+	transform: rotate(0deg);
+}
+
+.seconds-parent {
+	width: 150px;
+	transform: rotate(320deg);
+}
+
+.hours-parent {
+	width: 70px;
+	transform: rotate(150deg);
+}
+
+.no-digit {
+	width: 3px; 
+	height: 70%;
+	background-color: #234a56;
+}
+
+.clock-child {
+	width: 30%;
+	height: 30%;
+	padding: 4px;
+	background-color: #89b9c5;
+	box-shadow: 0px 0px 4px 0.2px lightgray;
+}
+
+.number-child {
+	font-weight: normal;
+	height: 10px;
+	top: calc(50% - 5.8px);
+	color: black;
+}
+
+.child1 {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+}
+
+.child2 {
+	position: absolute;
+	top: 40%;
+	right: 10%;
+}
+
+.child3 {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.clock-child-in {
+	background-color: #dde7dc;
+}
+
+.time-zone {
+	font-size: 14px;
+}
+
+.numbers-child {
+	font-size: 10px;
+}
+
+.clockwise-child {
+	height: 1px;
+	background-color: black;
+}
+
+.hours-child1 {
+	width: 15px;
+	transform: rotate(60deg);
+}
+
+.hours-child2 {
+	width: 15px;
+	transform: rotate(45deg);
+}
+
+.hours-child3 {
+	width: 15px;
+	transform: rotate(61deg);
+}
+
+.minutes-child1 {
+	width: 35px;
+	transform: rotate(95deg);
+}
+
+.minutes-child2 {
+	width: 35px;
+	transform: rotate(20deg);
+}
+
+.minutes-child3 {
+	width: 35px;
+	transform: rotate(162deg);
+}
+
+.no-digit-child {
+	width: 1px; 
+	height: 40%;
+	background-color: black;
+}
+
+.center-child {
+	width: 4px;
+	height: 4px;
+	background-color: black;
+	z-index: 2;
+}
