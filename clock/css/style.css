@@ -155,12 +155,12 @@ body {
 
 .seconds-parent {
 	width: 150px;
-	transform: rotate(320deg);
+	transform: rotate(0deg);
 }
 
 .hours-parent {
 	width: 70px;
-	transform: rotate(150deg);
+	transform: rotate(0deg);
 }
 
 .no-digit {
@@ -222,32 +222,32 @@ body {
 
 .hours-child1 {
 	width: 15px;
-	transform: rotate(60deg);
+	transform: rotate(0deg);
 }
 
 .hours-child2 {
 	width: 15px;
-	transform: rotate(45deg);
+	transform: rotate(0deg);
 }
 
 .hours-child3 {
 	width: 15px;
-	transform: rotate(61deg);
+	transform: rotate(0deg);
 }
 
 .minutes-child1 {
 	width: 35px;
-	transform: rotate(95deg);
+	transform: rotate(0deg);
 }
 
 .minutes-child2 {
 	width: 35px;
-	transform: rotate(20deg);
+	transform: rotate(0deg);
 }
 
 .minutes-child3 {
 	width: 35px;
-	transform: rotate(162deg);
+	transform: rotate(0deg);
 }
 
 .no-digit-child {
