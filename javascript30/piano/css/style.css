@@ -1,0 +1,81 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #efefef;
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.piano {
+	background-color: #333;
+	padding: 20px;
+	padding-bottom: 10px;
+	width: 532px;
+	height: 312px;
+	border: 1px solid #333;
+	border-bottom: none;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	box-shadow: 0px 0px 10px 1px grey;
+}
+
+.white-keyboard {
+	width: 70px;
+	height: 100%;
+	float: left;
+	margin-left: 0px;	
+	background-color: white;
+	border: 1px solid #333;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	z-index: 1;
+	font-weight: bold;
+	position: relative;
+	box-shadow: 0px 1px 5px gray;
+}
+
+.clear {
+	clear: both;
+}
+
+.black-keyboard {
+	float: left;
+	margin-left: -95px;
+	background-color: #111;
+	width: 50px;
+	z-index: 3;
+	height: 70%;
+	position: relative;
+	font-weight: bold;
+	box-shadow: inset 5px -20px 15px #333;
+}
+
+.black-keyboard .key {
+	color: white;
+}
+
+.key {
+	position: absolute;
+	left:50%;
+	bottom: 5%;
+	transform: translateX(-50%);
+}
+
+.keyboard {
+	transition: all 0.3s linear;
+}
+
+.pressed {
+	background-color: #69a85c;
+	transform: scale(0.95);
+}
