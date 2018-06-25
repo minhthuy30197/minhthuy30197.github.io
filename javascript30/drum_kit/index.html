@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drum Kit</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container content">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-4">
+							<div class="thumb" data-key="65">
+								<div class="key">A</div>
+								<div class="sound">CLAP</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="thumb" data-key="83">
+								<div class="key">S</div>
+								<div class="sound">KICK</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="thumb" data-key="68">
+								<div class="key">D</div>
+								<div class="sound">DRUM</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-4">
+							<div class="thumb" data-key="70">
+								<div class="key">F</div>
+								<div class="sound">BOOM</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="thumb" data-key="71">
+								<div class="key">G</div>
+								<div class="sound">TINK</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="thumb" data-key="72">
+								<div class="key">H</div>
+								<div class="sound">RIDE</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-4">
+							<div class="thumb" data-key="74">
+								<div class="key">J</div>
+								<div class="sound">SNAKE</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="thumb" data-key="75">
+								<div class="key">K</div>
+								<div class="sound">TOM</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="thumb" data-key="76">
+								<div class="key">L</div>
+								<div class="sound">HiHAT</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+	<audio src="sound/clap.wav" data-key="65"></audio>
+	<audio src="sound/kick.wav" data-key="83"></audio>
+	<audio src="sound/drum.wav" data-key="68"></audio>
+	<audio src="sound/boom.wav" data-key="70"></audio>
+	<audio src="sound/tink.wav" data-key="71"></audio>
+	<audio src="sound/ride.wav" data-key="72"></audio>
+	<audio src="sound/snake.wav" data-key="74"></audio>
+	<audio src="sound/tom.wav" data-key="75"></audio>
+	<audio src="sound/hihat.wav" data-key="76"></audio>
+</body>
+</html>
