@@ -51,3 +51,17 @@ body {
 	box-shadow: 0px 0px 10px 3px yellow;
 	transform: scale(1.2);
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.col-xs-4 {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.thumb {
+		padding: 5px;
+	}
+	.sound {
+		font-size: 13px;
+	}
+}
