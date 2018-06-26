@@ -5,8 +5,12 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--bgcolor: #efefef;
+}
+
 body {
-	background-color: #efefef;
+	background-color: var(--bgcolor);
 }
 
 .wrapper {
@@ -78,4 +82,10 @@ body {
 .pressed {
 	background-color: #69a85c;
 	transform: scale(0.95);
+}
+
+.change-bg {
+	position: fixed;
+	top: 5%;
+	right: 5%;
 }
