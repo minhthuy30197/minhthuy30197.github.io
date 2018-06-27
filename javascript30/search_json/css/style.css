@@ -21,7 +21,6 @@
 
 .menu-item {
 	padding: 1em;
-	text-align: center;
 }
 
 .menu-item a {
@@ -81,6 +80,18 @@
 	border: solid 1px #eee;
 	border-top: none;
 	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.name {
+	float: left;
+}
+
+.age {
+	float: right;
 }
 
 
