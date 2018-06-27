@@ -30,7 +30,10 @@
 }
 
 .thumbnail {
+	opacity: 0;
 	overflow: hidden;
+	transform: translateX(-200%);
+	transition: all 0.5s linear;
 }
 
 .thumbnail img {
@@ -153,6 +156,10 @@
 	}
 }
 
+.thumbnail.active {
+	opacity: 0.7;
+	transform: translateX(0%);
+}
 
 
 
