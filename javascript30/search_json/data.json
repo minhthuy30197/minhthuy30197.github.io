@@ -1,32 +1,32 @@
 [
 	{
-		name: "Lucia",
-		age: 12,
-		country: "USA"
+		"name": "Lucia",
+		"age": 12,
+		"country": "USA"
 	},
 	{
-		name: "Maria",
-		age: 20,
-		country: "USA"
+		"name": "Maria",
+		"age": 20,
+		"country": "USA"
 	},
 	{
-		name: "YuKo",
-		age: 12,
-		country: "Japan"
+		"name": "YuKo",
+		"age": 12,
+		"country": "Japan"
 	},
 	{
-		name: "Lina",
-		age: 20,
-		country: "England"
+		"name": "Lina",
+		"age": 20,
+		"country": "England"
 	},
 	{
-		name: "Hoa"
-		age: 30,
-		country: "VietNam"
+		"name": "Hoa",
+		"age": 30,
+		"country": "VietNam"
 	},
 	{
-		name: "Minh",
-		age: 46,
-		country: "VietNam"
+		"name": "Minh",
+		"age": 46,
+		"country": "VietNam"
 	}
 ]
