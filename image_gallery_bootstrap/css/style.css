@@ -7,22 +7,39 @@
 
 .navbar-inverse .navbar-brand {
 	font-family: Lucida Handwriting;
-	color: white;
+	max-width: 0;
+	overflow: hidden;
+	padding: 0px;
+	transition: all 0.5s linear;
 }
 
 .navbar {
-	background-color: #615d5d;
+	background-color: transparent;
 	margin-bottom: 0;
 	border: 0px;
 	border-radius: 0;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: white;
+	color: black;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
 	color: gray;
+}
+
+.fixed-nav nav {
+	background-color: #333;
+}
+
+.fixed-nav .navbar-inverse .navbar-brand  {
+	color: white;
+	padding: 15px;
+	max-width: 150px;
+}
+
+.fixed-nav nav .navbar-nav>li>a {
+	color: white;
 }
 
 .img-responsive {
