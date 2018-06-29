@@ -31,13 +31,13 @@ function calculate() {
 			operation.value += ")";
 		}
 		var tmp = operation.value;
-		tmp = tmp.replace(" x ", " * ");
-		tmp = tmp.replace(" ÷ ", " / ");
-		tmp = tmp.replace("%", "/100");
-		tmp = tmp.replace("√(", "Math.sqrt(");
-		tmp = tmp.replace("log(", "Math.log10(");
-		tmp = tmp.replace("ln(", "Math.log(");
-		tmp = tmp.replace("ln(", "Math.log(");
+		tmp = tmp.replace(/ x /g, " * ");
+		tmp = tmp.replace(/ ÷ /g, " / ");
+		tmp = tmp.replace(/ % /g, "/100");
+		tmp = tmp.replace(/√\(/g, "Math.sqrt(");
+		tmp = tmp.replace(/log\(/g, "Math.log10(");
+		tmp = tmp.replace(/ln\(/g, "Math.log(");
+		tmp = tmp.replace(/ln\(/g, "Math.log(");
 		tmp = tinhBinhPhuong(tmp);
 		tmp = tinhExp(tmp);
 		if (tmp.indexOf("NaN") != -1) {
@@ -49,6 +49,7 @@ function calculate() {
 		}
 	} catch (e) {
 		if (e instanceof SyntaxError) {
+			console.log(tmp);
 			alert("Biểu thức bạn nhập không hợp lệ!");
 		}
 	}
