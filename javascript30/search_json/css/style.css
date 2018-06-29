@@ -21,6 +21,8 @@
 
 .menu-item {
 	padding: 1em;
+	justify-content: center;
+	position: relative;
 }
 
 .menu-item a {
@@ -94,4 +96,61 @@
 	float: right;
 }
 
+
+.dropdown {
+	opacity: 0;
+	display: none;
+	transition: all 0.5s linear;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,50px);
+}
+
+.background {
+	background-color: lightblue;
+	opacity: 0;
+	display: none;
+	position: absolute;
+	transition: all 0.2s linear;
+}
+
+.background.bg-display {
+	display: block;
+}
+
+.background.bg-display.bg-appear {
+	opacity: 1;
+}
+
+.dropdown-appear > .dropdown{
+	opacity: 1;
+}
+
+.dropdown-display > .dropdown{
+	display: block;
+}
+
+.dropdown1 {
+	width: 300px;
+	padding: 10px;
+}
+
+.dropdown2 {
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+}
+
+.dropdown3 {
+	width: 100px;
+	padding: 10px;
+}
+
+.dropdown3 button {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
 
