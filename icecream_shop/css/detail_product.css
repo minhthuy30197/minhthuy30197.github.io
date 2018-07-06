@@ -40,6 +40,128 @@
 	border-radius: 5px;
 }
 
-#home {
+.review-product {
+	background-color: white;
+	padding: 1.8em;
+}
+
+#description, #review {
+	padding: 1.8em 0px;
 	text-align: justify;
 }
+
+.content-review > .nav > li > a {
+	color: #363739;
+	padding: 0.5em;
+}
+
+.review-item {
+	display: flex;
+	align-items: center;
+}
+
+.comment {
+	display: flex;
+}
+
+.avatar {
+	flex: 1;
+}
+
+.review-space, .comment-space {
+	flex: 0.5;
+}
+.review-text, .comment-content {
+	flex: 7;
+}
+
+.review-content {
+	color: #363739;
+	text-align: justify;
+}
+
+.reviews {
+	margin-bottom: 2em;
+}
+
+.avatar {
+	flex: 1;
+}
+
+#review-form input {
+	width: 50%;
+	border: 1px solid gray;
+}
+
+#review-form textarea {
+	border: 1px solid gray;
+}
+
+#review-form .star-grp {
+	display: inline-block;
+}
+
+#review-form button {
+	margin-top: 0.8em;
+	background-color: #363739;
+	color: white;
+}
+
+.infos {
+	padding: 1em;
+}
+
+.intro {
+	text-align: justify;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #363739;
+}
+
+.process-btn-grp {
+	padding-top: 1em;
+}
+
+.btn-cart {
+	background-color: #add8a6;
+	color: #363739;
+	border: 1px solid #363739;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	border-radius: 0px;
+	font-weight: bold;
+}
+
+.btn-compare {
+	background-color: #363739;
+	border: 1px solid #363739;
+	color: white;
+	border-radius: 0px;
+}
+
+input[type="number"] {
+	border: 1px solid #363739;
+	border-radius: 0px;
+	font-weight: bold;
+	text-align: center; 
+	width: 5em;
+	display: inline-block; 
+}
+
+.related-title {
+	color: #493521;
+	padding-bottom: 0.5em;
+	padding-top: 1em;
+	text-align: center;
+}
+
+.related-products {
+	display: flex;
+	flex-direction: column;
+}
+
+.related-item {
+	flex: 1;
+	padding: 1em;
+	border-top: 1px solid #363739;
+}
+

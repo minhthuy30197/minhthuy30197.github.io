@@ -384,8 +384,8 @@ body {
 
 .name-icecream {
 	color: #493521;
-	font-size: 22px;
-	font-weight: bold;
+	font-size: 1.3em;
+	font-weight: bolder;
 }
 
 .new-tag {
@@ -564,7 +564,7 @@ tr > td{
 	padding-bottom: 1em;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
 	width: 100%;
 }
 

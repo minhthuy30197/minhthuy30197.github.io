@@ -67,8 +67,33 @@
 									</div>
 								</div>
 								<div class="col-sm-7">
-									
-								</div>
+									<div class="infos">
+										<div class="name-icecream">
+											Icecream 1
+										</div>
+										<div class="price">
+											100.000 VND
+										</div>
+										<div class="star-grp">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<br>
+										<div class="intro">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quam optio porro labore quidem facere itaque, veniam iure ratione voluptates perspiciatis fuga excepturi vel minima nam quod molestias? Alias, placeat?
+										</div>
+										<div class="process-btn-grp">
+											<input type="number" class="form-control" name="quantity" value="0" min="0" title="Quantity">
+											<button class="btn btn-cart">Add to cart</button>
+											<button class="btn btn-compare">
+												<i class="fas fa-sliders-h" title="Compare product"></i>
+											</button>
+										</div>
+									</div>
+								</div>	
 							</div>
 						</div>
 					</div>
@@ -76,23 +101,175 @@
 					<div class="review-product">
 						<div class="content-review">
 							<ul class="nav nav-tabs">
-							<li class="active"><a data-toggle="tab" href="#description">Description</a></li>
-							<li><a data-toggle="tab" href="#review">Review</a></li>
-						</ul>
-						<div class="tab-content">
-							<div id="description" class="tab-pane fade in active">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dolores provident nam eum aut consequuntur aliquam odio itaque quisquam est nisi totam nihil laborum quibusdam voluptas commodi, culpa. Modi, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iure laboriosam quaerat, magnam modi praesentium non nobis suscipit consequuntur, totam sapiente iste autem similique quibusdam odit porro. Quis, veniam excepturi.
+								<li class="active"><a data-toggle="tab" href="#description">Description</a></li>
+								<li><a data-toggle="tab" href="#review">Review</a></li>
+							</ul>
+							<div class="tab-content">
+								<div id="description" class="tab-pane fade in active">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus dolores provident nam eum aut consequuntur aliquam odio itaque quisquam est nisi totam nihil laborum quibusdam voluptas commodi, culpa. Modi, ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iure laboriosam quaerat, magnam modi praesentium non nobis suscipit consequuntur, totam sapiente iste autem similique quibusdam odit porro. Quis, veniam excepturi.
+								</div>
+								<div id="review" class="tab-pane fade">
+									<div class="reviews">
+										<div class="review-item">
+											<div class="avatar">
+												<img src="images/user.png" alt="avatar" class="img-responsive">
+											</div>
+											<div class="review-space"></div>
+											<div class="review-text">
+												<div class="name-reviewer">
+													User 1
+												</div>
+												<div class="stars">
+													<div class="star-grp">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+												</div>
+												<div class="review-content">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut molestias doloribus nostrum, vero commodi, architecto perspiciatis enim velit iste sunt fuga.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="comment">
+										<div class="avatar">
+											<img src="images/user.png" alt="avatar" class="img-responsive">
+										</div>
+										<div class="comment-space"></div>
+										<div class="comment-content">
+											<form action="" id="review-form">
+												Email
+												<br>
+												<input type="email">
+												<br>
+												Name 
+												<br>
+												<input type="text">
+												<br>
+												Your review
+												<br>
+												<textarea rows="3"></textarea>
+												<br>
+												Your rating
+												<div class="star-grp">
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+												<br>
+												<button class="btn">SUBMIT</button>
+											</form>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div id="review" class="tab-pane fade">
-								review
-							</div>
-						</div>
 						</div>
 					</div>
-				</div>
+				</div>				
 				<div class="col-md-3">
 					<div class="related-product">
-						
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="related-title">RELATED PRODUCTS</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="related-products">
+										<div class="related-item">
+											<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+											<div class="info-icecream text-center">
+												<div class="star-grp">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+												<div class="name-icecream">
+													Icecream 1
+												</div>
+												<div class="price">
+													100.000 VND
+												</div>
+											</div>
+											<div class="hover-ice">
+												<div class="hover-ice-div">
+													<div class="btn-grp">
+														<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+														<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+														<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="related-item">
+											<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+											<div class="info-icecream text-center">
+												<div class="star-grp">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+												<div class="name-icecream">
+													Icecream 1
+												</div>
+												<div class="price">
+													100.000 VND
+												</div>
+											</div>
+											<div class="hover-ice">
+												<div class="hover-ice-div">
+													<div class="btn-grp">
+														<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+														<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+														<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="related-item">
+											<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+											<div class="info-icecream text-center">
+												<div class="star-grp">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+												<div class="name-icecream">
+													Icecream 1
+												</div>
+												<div class="price">
+													100.000 VND
+												</div>
+											</div>
+											<div class="hover-ice">
+												<div class="hover-ice-div">
+													<div class="btn-grp">
+														<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+														<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+														<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
