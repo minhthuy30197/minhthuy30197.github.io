@@ -708,7 +708,7 @@ footer a:hover {
 	font-size: 1.2em;
 }
 
-.breadcrumb li a {
+.breadcrumb li a{
 	color: #363739;
 	font-weight: bold;
 	text-decoration: none;
@@ -721,6 +721,10 @@ footer a:hover {
 .breadcrumb > li+li:before {
 	content: '▸';
 	color: #363739;
+}
+
+.breadcrumb > li:last-child {
+	font-weight: bold;
 }
 
 .space-div {

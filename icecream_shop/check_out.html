@@ -9,146 +9,128 @@
 	<link rel="icon" type="image/png" href="images/ice-logo.png"/>
 	<link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/cart.css">
+	<link rel="stylesheet" href="css/check_out.css">
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class="my-banner">
 		<div class="banner-title">
-			<div class="banner-text" id="cart-content">
-				CART
+			<div class="banner-text" id="check-out-content">
+				CHECK OUT
 			</div>
 			<div class="banner-info">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum explicabo debitis molestiae nam ut, odit, et saepe placeat dolor libero. 
 			</div>
 		</div>
 	</div>
-	<div class="cart-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<ul class="breadcrumb">
-						<li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
-						<li>CART</li>
-					</ul>
+	<form action="">
+		<div class="check-out-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="breadcrumb">
+							<li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+							<li><a href="cart.html?#cart-content"></i> CART</a></li>
+							<li>CHECK OUT</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-xs-12">
-					<ul class="products">
-						<li class="product">
-							<div class="col">
-								<div class="title-table">Product</div>
+				<br>
+				<div class="row">
+					<div class="col-md-5 col-sm-5">
+						<p class="title-form"><i class="fas fa-asterisk"></i> Billing detail</p>
+						Your Name 
+							<br>
+							<input type="text">
+							<br>
+							Address 
+							<br>
+							<input type="text">
+							<br>
+							Phone
+							<br>
+							<input type="text">
+							<br>
+							Mail
+							<br>
+							<input type="email">
+							<br>
+							Note
+							<br>
+							<textarea rows="3"></textarea>
+							<br>
+							<input type="checkbox" name="create" id="create">
+							<label for="create">Create an account?</label>
+						
+					</div>
+					<div class="col-md-5 col-md-push-2 col-sm-6 col-sm-push-1">
+						<div class="annouce">
+							<div class="title-annouce text-center">
+								Your Order
 							</div>
-							<div class="col">
-								<div class="title-table">
-									Price
+							PRODUCT
+							<div class="part-order1 products">
+								<div class="left">
+									<p>Icecream1 x 1</p>
+									<p>Icecream2 x 1</p>
+								</div>
+								<div class="right" id="subtotal">
+									<p>100.000 VND</p>
+									<p>100.000 VND</p>
 								</div>
 							</div>
-							<div class="col">
-								<div class="title-table">Quantity</div>
-							</div>
-							<div class="col">
-								<div class="title-table">Total</div>
-							</div>
-							<div class="remove">
-								&ensp;
-							</div>
-						</li>
-						<li class="product">
-							<div class="col info-product">
-								<div class="img-product">
-									<img src="images/ic1.png" alt="icecream 1" class="img-responsive">
+							<div class="part-order1">
+								<div class="left">
+									SUBTOTAL
 								</div>
-								<div class="info-detail">
-									Icecream 1
+								<div class="right" id="subtotal">
+									200.000 VND
 								</div>
 							</div>
-							<div class="col price">
-								100.000 VND
-							</div>
-							<div class="col">
-								<input type="number" class="form-control" name="quantity" value="1" min="0" title="Quantity">
-							</div>
-							<div class="col total">
-								100.000 VND
-							</div>
-							<div class="remove">
-								<button class="btn btn-remove"><i class="fas fa-times"></i></button>
-							</div>
-						</li>
-						<li class="product">
-							<div class="col info-product">
-								<div class="img-product">
-									<img src="images/ic2.png" alt="icecream 2" class="img-responsive">
+							<div class="part-order1">
+								<div class="left">
+									SHIPPING
 								</div>
-								<div class="info-detail">
-									Icecream 2
+								<div class="right" id="ship-fee">
+									0 VND
 								</div>
 							</div>
-							<div class="col price">
-								100.000 VND
+							<div class="part-order1">
+								<div class="left">
+									TOTAL
+								</div>
+								<div class="right" id="total">
+									200.000 VND
+								</div>
 							</div>
-							<div class="col">
-								<input type="number" class="form-control" name="quantity" value="1" min="0" title="Quantity">
+							<div class="part-order2">
+								<div class="form-check">
+									<input type="checkbox" value="Direct bank transer" id="check1">
+									<label for="check1">
+										Direct bank transer
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="Check payments" id="check2">
+									<label for="check2">
+										Check payments
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="Cash a delivery" id="check3">
+									<label for="check3">
+										Cash a delivery
+									</label>
+								</div>
 							</div>
-							<div class="col total">
-								100.000 VND
-							</div>
-							<div class="remove">
-								<button class="btn btn-remove"><i class="fas fa-times"></i></button>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-sm-5">
-					<form>
-						<div class="input-group">
-							<div class="input-group-btn">
-								<button class="btn btn-default coupon-btn" type="submit">Enter coupon code</button>
-							</div>
-							<input type="text" class="form-control" name="coupon">
+							<button class="btn btn-place-order">PLACE ORDER</button>
 						</div>
-					</form>
-				</div>
-				<div class="col-sm-7 continue">
-					<button class="btn btn-continue">Contiue Shopping</button>
-				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<div class="row">
-				<div class="col-md-5 col-md-push-7 col-sm-6 col-sm-push-6">
-					<div class="annouce">
-						<div class="title-annouce text-center">
-							Cart Total
-						</div>
-						<div class="content-annouce">
-							<div class="texts">
-								SUBTOTAL
-								<br>
-								SHIPPING
-								<br>
-								TOTAL
-							</div>
-							<div class="cost">
-								<div id="subtotal">200.000 VND</div>
-								<div id="ship-fee">0 </div>
-								<div id="total">200.000 VND</div>
-							</div>
-						</div>
-						<a href="check_out.html?#check-out-content"><button class="btn btn-check-out">CHECK OUT</button></a>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>	
+		</div>	
+	</form>
 	<footer>
 		<div class="container">
 			<div class="row">
