@@ -1,0 +1,45 @@
+.my-banner {
+	background-image: url('../images/detail-bg.png');
+}
+
+.detail-shop-content {
+	padding: 80px 0px;
+}
+
+.btn-shopping {
+	background-color: #363739;
+	color: white;
+}
+
+.btn-shopping:hover {
+	background-color: #add8a6;
+	color: #363739;
+}
+
+.info-product {
+	background-color: white;
+}
+
+.related-product {
+	background-color: white;
+	padding: 15px;
+}
+
+.small-imgs {
+	width: 100%;
+}
+
+.small-img {
+	width: 33.333333%;
+	float: left;
+	padding: 0.8em;
+}
+
+.img-card {
+	border: 1px solid #363739;
+	border-radius: 5px;
+}
+
+#home {
+	text-align: justify;
+}

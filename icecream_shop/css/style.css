@@ -1,0 +1,734 @@
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e1f2e0;
+	font-size: 18px;
+}
+
+.container {
+	/*width: 1140px;*/
+}
+
+.clear {
+	clear: both;
+}
+
+.menu {
+	width: 100%;
+	padding: 0px;
+}
+
+.menu-content {
+	width: 100%;
+	border-bottom: 1px solid #b89067;
+}
+
+.menu1 {
+	margin: 0 auto;
+	padding: 20px 15px;
+}
+
+.menu2 {
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	height: 100px;
+}
+
+.call-us {
+	float: left;
+}
+
+.login {
+	float: right;
+}
+
+.navbar.navbar-default {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color :white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #add8a6;
+}
+
+.nav>li>a {
+	padding-right: 60px;
+}
+
+.navbar-right {
+	margin-right: 0px;
+}
+
+.nav>li>a:nth-child(1) {
+	padding-left:0px;
+}
+
+.nav>li:nth-child(4)>a {
+	padding-right: 0px;
+}
+
+.navbar-header {
+	width: 100%;
+	position: relative;
+}
+
+.navbar-brand
+{
+	position: absolute;
+	width: 100px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.navbar-toggle {
+	z-index:3;
+}
+
+.navbar-collapse {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.header {
+	background-image: url('../images/ice3.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center; 
+	position: relative;
+	height: 1000px;
+	color: white;
+}
+
+.banner {
+	text-align: center;
+	width: 60%;
+	position: absolute; 
+	left: 20%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.name {
+	font-family: 'Courgette', cursive;
+	font-size: 45px;
+	line-height: 55px;
+}
+
+.slogan {
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+.intro {
+	line-height: 25px;
+}
+
+.banner button {
+	outline: none;
+	border-radius: 12px;
+	margin-top: 30px;
+}
+
+.btn-shopping {
+	background-color: #e1f2e0;
+	padding: 10px 15px;
+	color: #493521;
+	font-weight: bold;
+	transition: all 0.5s linear;
+}
+
+.about-us {
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.about-left {
+	padding-right: 5%;
+}
+
+.title {
+	font-weight: bold;
+	font-family: 'Courgette', cursive;
+	color: #493521;
+	font-size: 30px;
+}
+
+.btn-shopping:hover {
+	background-color: #493521;
+	color: white;
+	box-shadow: 0 0 10px 2px lightgray;
+}
+
+.img-responsive {
+	width: 100%;
+}
+
+.about-info {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.our-story {
+	font-style: italic;
+	text-align: right;
+	margin-right: 30px;
+}
+
+.our-story a{
+	color: #363739;
+	text-decoration: none;
+	transition: all 0.5s linear;
+}
+
+.our-story a:hover {
+	background-color: #493521;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-weight: light;
+}
+
+.digits-div {
+	background-image: url('../images/Group.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center; 
+	position: relative;
+	color: white;
+	padding: 50px 0px;
+	text-align: center;
+}
+
+.digits {
+	border: 2px solid white;
+}
+
+.line-digit {
+	width: 2px;
+	margin: 0 auto;
+	background-color: white;
+	height: 50px;
+}
+
+.digit {
+	font-size: 75px;
+	line-height: 85px;
+	letter-spacing: 5px;
+}
+
+.passion-div {
+	position: relative;
+}
+
+.line {
+	position: absolute;
+	top: 50%;
+	height: 2px;
+	background-color: white;
+	width: 15%;
+	transform: translateY(-50%);
+}
+
+.line1 {
+	left: 20%;
+}
+
+.line2 {
+	right: 20%;
+}
+
+.passion {
+	font-size: 22px;
+	word-spacing: 10px;
+	letter-spacing: 2px;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.passion-p {
+	text-align: justify;
+	padding: 20px;
+}
+
+.passion-p1 {
+	padding-left: 10%;
+}
+
+.passion-p2 {
+	padding-right: 10%;
+}
+
+.why {
+	background-image: url('../images/hold-icecream.png');
+	background-repeat: no-repeat;
+	background-position:center bottom;
+	padding: 100px 0px;
+}
+
+.reason {
+	background-color: white;
+	padding: 20px;
+	padding-top: 50px;
+	box-shadow: 0px 0px 10px 2px lightgray;
+	position: relative;
+	margin-top: 100px;
+}
+
+.icon-reason {
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	left: 10%;
+	top: -50px;
+	width: 100px;
+	height: 100px;
+	padding: 15px;
+}
+
+.reason-title {
+	font-weight: bold;
+	color: #493521;
+	font-size: 20px;
+}
+
+.reason-content {
+	text-align: justify;
+}
+
+.video {
+	position: relative;
+	min-width: 100%;
+	min-height: 400px;
+}
+
+.video-text {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title-video {
+	font-size: 60px;
+	color: white;
+}
+
+.video-title {
+	font-size: 30px;
+}
+
+.player {
+	background-color: transparent;
+	margin-top: 5%;
+	font-size: 60px;
+}
+.video-container {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#myVideo {
+	position: absolute;
+	min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+}
+
+
+.catolog {
+	padding: 80px 0px;
+	padding-bottom: 0px;
+}
+
+.thumbnail {
+	border-radius: 0px;
+	box-shadow: 0px 0px 10px 1px gray;
+	padding: 10%;
+	position: relative;
+	margin-bottom: 15%;
+	border: none;
+}
+
+.info-icecream {
+	margin-top: 10%;
+}
+
+.name-icecream {
+	color: #493521;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.new-tag {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #add8a6;
+	color: white;
+	padding: 10px;
+}
+
+.hover-ice {
+	background-color: rgba(0,0,0,0.75);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s linear;
+}
+
+.thumbnail:hover .hover-ice {
+	opacity: 1;
+	visibility: visible;
+}
+
+.hover-ice-div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.btn-icon {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px 15px;
+	background-color: transparent;
+	outline: none;
+}
+
+.btn-grp {
+	color: white;
+	font-size: 28px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.for-more {
+	margin-top: 5%;
+	background-color: #363739;
+	color: white;
+	padding: 10px 25px;
+	border-radius: 5px;
+	outline: none;
+}
+
+.review {
+	background-image: url('../images/bg-ic.jpg');
+	background-repeat: no-repeat;
+	background-position:center top;
+	padding-top: 26%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 100px;
+}
+
+.review > .container > .row > .text-center > .title {
+	color: white;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+.item {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.item img {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.review-content {
+	color: white;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.carousel-indicators {
+	bottom: -30px;
+}
+
+ol {
+	margin-bottom: 0px;
+}
+
+
+.carousel-control {
+	opacity: 1;
+}
+
+.freeship-content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.freeship-content > .freeship-text2 {
+    -webkit-flex: 2;  /* Safari 6.1+ */
+    -ms-flex: 2;  /* IE 10 */    
+    flex: 2;
+    text-align: left;
+}
+
+.freeship-content > .freeship-text1 {
+    -webkit-flex: 2;  /* Safari 6.1+ */
+    -ms-flex: 2;  /* IE 10 */    
+    flex: 2;
+    text-align: center;
+}
+
+.freeship-content > .freeship-btn {
+	-webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+	text-align: left;
+}
+
+.freeship {
+	background-color: #363739;
+	width: 100%;
+	padding: 30px 0px;
+	vertical-align: middle;
+}
+
+.freeship-text1 {
+	color: #e1f2e0;
+	font-size: 48px;
+	font-family: 'Courgette', cursive;
+	letter-spacing: 10px;
+}
+
+.freeship-text2 {
+	line-height: 60px;
+	height: 100%;
+	color: white;
+	font-size: 28px;
+	word-spacing: 2px;
+}
+
+.contact {
+	padding: 80px 0px;
+}
+
+.title-contact {
+	padding-bottom: 2em;
+}
+
+table {
+	width: 100%;
+	
+}
+
+tr > td{
+	padding-bottom: 1em;
+}
+
+input[type=text], textarea {
+	width: 100%;
+}
+
+textarea {
+	resize: none;
+}
+
+.btn-submit {
+	color: white;
+	background-color: #363739;
+	border-radius: 0px;
+	margin-right: 0px;
+	transition: all 0.5s linear;
+}
+
+.btn-submit:hover {
+	background-color: #add8a6;
+}
+
+.map {
+	position: relative;
+}
+
+.enter-mail {
+	z-index: 2;
+	position: absolute;
+	width: 30%;
+	top: -1.5em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.enter-mail input {
+	height: 3em;
+}
+
+.get-news {
+	background-color: #363739;
+	color: white;
+	height: 3em;
+	width: 5em;
+	border: none;
+}
+
+footer {
+	background-color: #363739;
+	padding: 80px 0px;
+	padding-bottom: 30px;
+	color: white;
+	font-size: 0.9em;
+}
+
+.footer-title {
+	font-size: 20px;
+	margin-bottom: 1em;
+	color: #add8a6;
+	font-weight: bold;
+}
+
+.info-footer {
+	font-size: 0.9em;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.8em;
+}
+
+footer a:hover {
+	color: #add8a6;
+}
+
+.imgs {
+	width: 100%;
+}
+
+.img-footer {
+	width: 33.33333%;
+	float: left;
+	padding: 0.5em;
+}
+
+.thumb {
+	overflow: hidden;
+}
+
+.img-footer img {
+	opacity: 0.6;
+	transition: all 0.5s linear;
+}
+
+.img-footer img:hover {
+	opacity: 1;
+	transform: scale(1.2);
+}
+
+.foot {
+	padding: 0;
+}
+
+.social-grp {
+	width: 60%;
+}
+
+.social-item {
+	width: 20%;
+	float: left;
+	padding: 5px;
+}
+
+.my-banner {
+	width: 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center; 
+	position: relative;
+	height: 400px;
+	color: white;
+	text-align: center;
+}
+
+.banner-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner-text {
+	font-size: 3em;
+	word-spacing: 0.2em;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 0px;
+	font-size: 1.2em;
+}
+
+.breadcrumb li a {
+	color: #363739;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+	color: #493521;
+}
+
+.breadcrumb > li+li:before {
+	content: '▸';
+	color: #363739;
+}
+
+.space-div {
+	height: 1px;
+	width: 100%;
+}
+
+div#map{
+    width: 100%;
+    height: 25em;
+}

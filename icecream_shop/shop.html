@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dave Gourmet</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="icon" type="image/png" href="images/ice-logo.png"/>
+	<link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/shop.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="my-banner">
+		<div class="banner-title">
+			<div class="banner-text" id="shop-content">
+				ICECREAMS WORLD
+			</div>
+		</div>
+	</div>
+	<div class="shop-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-xs-9">
+					<ul class="breadcrumb">
+						<li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+						<li class="name_blog">STORE</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 col-xs-3">
+					<form action="">
+						<select class="form-control" id="sel1">
+							<option>ASC</option>
+							<option>DESC</option>
+						</select>
+					</form>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="filter">
+						<form id="search">
+							<div class="input-group">
+								<input type="text" class="form-control search" placeholder="Search something ...">
+								<div class="input-group-btn">
+									<button class="btn btn-default search-btn" type="submit">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+						<br>
+						<form class ="filter-form" id="filter-by-type">
+							<div class="title-form">
+								Filter by type
+							</div>	
+							<div class="body-form">
+								<div class="form-check">
+									<input type="checkbox" value="chocolate" id="check1">
+									<label for="check1">
+										Chocolate
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="matcha" id="check2">
+									<label for="check2">
+										Matcha
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="strawberry" id="check3">
+									<label for="check3">
+										Strawberry
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="cacao" id="check4">
+									<label for="check4">
+										Cacao
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="vani" id="check5">
+									<label for="check5">
+										Vani
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="other" id="check6">
+									<label for="check6">
+										Other
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="mix" id="check6">
+									<label for="check6">
+										Mix
+									</label>
+								</div>
+							</div>						
+						</form>
+						<br>
+						<form class ="filter-form" id="filter-by-price">
+							<div class="title-form">
+								Filter by price
+							</div>	
+							<div class="body-form">
+								<div class="form-check">
+									<input type="checkbox" value="0-100" id="check1">
+									<label for="check1">
+										0 - 100K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="100-200" id="check2">
+									<label for="check2">
+										100K - 200K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="200-300" id="check3">
+									<label for="check3">
+										200K - 300K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="300-400" id="check4">
+									<label for="check4">
+										300 - 400K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="400-500" id="check5">
+									<label for="check5">
+										400K - 500K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value=">500" id="check6">
+									<label for="check6">
+										> 500K
+									</label>
+								</div>
+							</div>						
+						</form>
+						<br>
+						<form class ="filter-form" id="filter-by-discount">
+							<div class="title-form">
+								Filter by discount
+							</div>	
+							<div class="body-form">
+								<div class="form-check">
+									<input type="checkbox" value="10" id="check1">
+									<label for="check1">
+										10%
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="20" id="check2">
+									<label for="check2">
+										20%
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="50" id="check3">
+									<label for="check3">
+										50%
+									</label>
+								</div>
+							</div>						
+						</form>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="list-products">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="thumbnail">
+										<div class="new-tag">
+											NEW
+										</div>
+										<img src="images/ic1.png" alt="Icecream1" class="img-responsive">
+										<div class="info-icecream text-center">
+											<div class="star-grp">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<div class="name-icecream">
+												Icecream 1
+											</div>
+											<div class="price">
+												100.000 VND
+											</div>
+										</div>
+										<div class="hover-ice">
+											<div class="hover-ice-div">
+												<div class="btn-grp">
+													<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+													<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
+													<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<ul class="pagination">
+							<li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">...</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="freeship">
+		<div class="container">
+			<div class="freeship-content">
+				<div class="freeship-text1">
+					FREESHIP
+				</div>
+				<div class="freeship-text2">
+					for all 200.000 VND bill
+				</div>
+				<div class="freeship-btn">
+					<button class="btn-shopping">Shopping now</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="space-div">
+
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="footer-title">
+						<i class="fas fa-map-marker-alt"></i>&emsp;LOCATION
+					</div>
+					<div class="container-fluid foot">
+						<div class="row">
+							<div class="col-sm-6">
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+							</div>
+							<div class="col-sm-6">
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="footer-title">
+						<i class="fas fa-hourglass-half"></i>&emsp;OPEN AT
+					</div>
+					<div class="time">
+						<p>7.30 AM - 11.30 AM</p>
+						<p>13.00 PM - 23.00 PM</p>
+					</div>
+					<br>
+					<div class="footer-title">
+						<i class="fas fa-phone-volume"></i>&emsp; <span class="info-footer">999.999.999 - 888.888.888</span>
+					</div>
+					<div class="footer-title">
+						<i class="far fa-envelope"></i>&emsp;<span class="info-footer">abc@gmail.com</span>
+					</div>
+					<br>
+					<div class="footer-title">
+						<div class="social-title">
+							SOCIAL
+						</div>
+						<div class="social-grp">
+							<div class="social-item">
+								<a href=""><i class="fab fa-facebook"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-twitter-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-google-plus-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-pinterest-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-linkedin"></i></a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="imgs">
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f2.jpeg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f1.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f4.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f3.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f5.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f6.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f7.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f8.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f9.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
