@@ -9,7 +9,6 @@
 	<link rel="icon" type="image/png" href="images/ice-logo.png"/>
 	<link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -28,29 +27,42 @@
 				</div>
 			</div>
 			<div class="container menu2">
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>    
-						<a class="navbar-brand" href="#"><img src="images/ice-logo.png" alt="Logo" class="img-responsive"></a>
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="http://disputebills.com"><img src="images/ice-logo.png" alt="Logo" class="img-responsive">
+							</a>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="about.html">About us</a></li>
+								<li><a href="shop.html">Store</a></li>
+								<li><a href="promotion.html">Promotions</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="index.html#contact">Contact</a></li>
+								<li><a onclick="openSearch()"><i class="fas fa-search"></i></a></li>
+								<li id="last-menu-item"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-left">
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Store</a></li>
-							<li><a href="#">Promotion</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#"><i class="fas fa-search"></i></a></li>
-							<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-						</ul>
-					</div>
-				</nav>
+				</nav>				
+			</div>
+		</div>
+		<div id="myOverlay" class="overlay">
+			<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+			<div class="overlay-content">
+				<form action="/action_page.php">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
 			</div>
 		</div>
 		<div class="banner">
@@ -59,7 +71,7 @@
 			<div class="intro">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia.
 			</div>
-			<a href=""><button class="btn-shopping">Shopping now</button></a>
+			<a href="shop.html"><button class="btn-shopping">Shopping now</button></a>
 		</div>
 	</div>
 	<div class="about-us container">
@@ -74,7 +86,7 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia, nisi odio ullamcorper tellus, eget luctus lectus tortor ac metus. Aliquam vitae sapien condimentum, euismod est sit amet, sagittis diam. Fusce vitae gravida nisl. Suspendisse a tortor consequat, ultricies tellus id, tempus nulla. Nunc non metus non dui ornare facilisis. Aenean lorem diam, condimentum nec odio quis, sodales cursus est. Sed vulputate ornare tortor quis vehicula. Curabitur accumsan ut sapien fringilla aliquet. Nulla facilisi. Morbi condimentum tincidunt diam vitae rutrum. 
 				</div>
 				<div class="our-story">
-					<a href="about.html#about-content">Our story&ensp;<i class="fas fa-angle-double-right"></i></a>
+					<a href="about.html">Our story&ensp;<i class="fas fa-angle-double-right"></i></a>
 				</div>
 			</div>
 			<div class="col-sm-4">
@@ -439,12 +451,12 @@
 					for all 200.000 VND bill
 				</div>
 				<div class="freeship-btn">
-					<button class="btn-shopping">Shopping now</button>
+					<a href="shop.html"><button class="btn-shopping">Shopping now</button></a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="contact">
+	<div class="contact" id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
@@ -620,20 +632,8 @@
 			</div>
 		</div>
 	</footer>
-
-	<script>
-		function initMap() {
-			var uluru = { lat: 21.0156784, lng: 105.8451308 };
-			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 16,
-				center: uluru
-			});
-			var marker = new google.maps.Marker({
-				position: uluru,
-				map: map
-			});
-		}
-	</script>
+	
+	<script src="js/script.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEuf8DBhwL6DRYx1fOGDMvEtD9GGJ9vYY&callback=initMap">
 	</script>
 </body>

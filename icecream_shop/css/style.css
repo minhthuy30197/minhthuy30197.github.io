@@ -35,9 +35,8 @@ body {
 
 .menu2 {
 	margin: 0 auto;
-	padding-top: 15px;
-	padding-bottom: 0px;
-	height: 100px;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 .call-us {
@@ -57,43 +56,17 @@ body {
 
 .navbar-default .navbar-nav>li>a {
 	color :white;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
 	color: #add8a6;
 }
 
-.nav>li>a {
-	padding-right: 60px;
-}
-
-.navbar-right {
-	margin-right: 0px;
-}
-
-.nav>li>a:nth-child(1) {
-	padding-left:0px;
-}
-
-.nav>li:nth-child(4)>a {
+.navbar.navbar-default > .container-fluid {
+	padding-left: 0px;
 	padding-right: 0px;
-}
-
-.navbar-header {
-	width: 100%;
-	position: relative;
-}
-
-.navbar-brand
-{
-	position: absolute;
-	width: 100px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-.navbar-toggle {
-	z-index:3;
 }
 
 .navbar-collapse {
@@ -101,8 +74,42 @@ body {
 	padding-right: 0px;
 }
 
+.nav.navbar-nav.navbar-left > li:nth-child(1) > a {
+	padding-left: 0px;
+}
+
+.nav.navbar-nav.navbar-right > li:nth-child(4) > a {
+	padding-right: 15px;
+}
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding: 0px;
+}
+
 .img-responsive {
 	width: 100%;
+}
+
+.menu2.container-fluid {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	background-color: #363739;
+	box-shadow: 0px 1px 5px lightgray;
+}
+
+.menu2.container-fluid > nav.fixed-navbar {
+	padding: 0px 15px;
 }
 
 .header {
@@ -116,6 +123,98 @@ body {
 	position: relative;
 	height: 1000px;
 	color: white;
+}
+
+.second-header {
+	background-color: #363739;
+	color: white;
+}
+
+.dropdown-menu {
+	color: #363739;
+	padding: 0px 0px;
+}
+
+.dropdown-menu li{
+	padding: 5px;
+	text-align: center;
+	font-size: 1.2em;
+	border-top: 1px solid #363739;
+}
+
+.dropdown-menu li:nth-child(1) {
+	border-top: none;
+}
+
+.dropdown-menu li:hover {
+	background-color: #add8a6;
+	color: #363739;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #add8a6;
+    border: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #eee;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+}
+
+.overlay input[type=text]:hover {
+    background: #fff;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
 }
 
 .banner {
@@ -589,7 +688,7 @@ textarea {
 }
 
 .enter-mail {
-	z-index: 2;
+	z-index: 1;
 	position: absolute;
 	width: 30%;
 	top: -1.5em;
@@ -688,6 +787,15 @@ footer a:hover {
 	height: 400px;
 	color: white;
 	text-align: center;
+}
+
+.waves {
+	position: absolute;
+	top: -1px;
+	width: 100%;
+	background-image: url('../images/wave.png');
+	background-repeat: repeat;
+	height: 23px;
 }
 
 .banner-title {
