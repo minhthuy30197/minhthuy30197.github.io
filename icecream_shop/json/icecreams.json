@@ -12,6 +12,13 @@
 			"ic2",
 			"ic3",
 			"ic4"
+		],
+		"review": [
+			{
+				"user": "User 1",
+				"rating": 4,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			}
 		]
 	},
 	{
@@ -27,6 +34,14 @@
 			"ic5",
 			"ic6",
 			"ic1"
+		],
+		,
+		"review": [
+			{
+				"user": "User 2",
+				"rating": 5,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			}
 		]
 	},
 	{
@@ -56,6 +71,14 @@
 			"ic2",
 			"ic3",
 			"ic5"
+		],
+		,
+		"review": [
+			{
+				"user": "User 1",
+				"rating": 5,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			}
 		]
 	},
 	{
@@ -84,6 +107,18 @@
 			"ic2",
 			"ic3",
 			"ic1"
+		],
+		"review": [
+			{
+				"user": "User 1",
+				"rating": 4,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			},
+			{
+				"user": "User 2",
+				"rating": 5,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			}
 		]
 	},
 	{
