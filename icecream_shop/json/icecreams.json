@@ -7,7 +7,12 @@
 		"rating": 4,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
-		"tag": "NEW"
+		"tag": "NEW",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
 	},
 	{
 		"id": "ic2",
@@ -17,7 +22,12 @@
 		"rating": 5,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
-		"tag": "NEW"
+		"tag": "NEW",
+		"related": [
+			"ic5",
+			"ic6",
+			"ic1"
+		]
 	},
 	{
 		"id": "ic3",
@@ -26,7 +36,12 @@
 		"price": 65000,
 		"rating": 3.5,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic1",
+			"ic4"
+		]
 	},
 	{
 		"id": "ic4",
@@ -36,8 +51,12 @@
 		"rating": 4,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
-		"discount": 20
-	
+		"discount": 20,
+		"related": [
+			"ic2",
+			"ic3",
+			"ic5"
+		]
 	},
 	{
 		"id": "ic5",
@@ -46,7 +65,12 @@
 		"price": 178500,
 		"rating": 4,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
 	},
 	{
 		"id": "ic6",
@@ -55,7 +79,12 @@
 		"price": 105000,
 		"rating": 4.5,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic1"
+		]
 	},
 	{
 		"id": "ic7",
@@ -64,7 +93,12 @@
 		"price": 95000,
 		"rating": 4,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
 	},
 	{
 		"id": "ic8",
@@ -73,7 +107,12 @@
 		"price": 95000,
 		"rating": 4,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
 	},
 	{
 		"id": "ic9",
@@ -82,6 +121,11 @@
 		"price": 95000,
 		"rating": 4,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
 	}
 ]

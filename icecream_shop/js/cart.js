@@ -4,7 +4,6 @@ fetch(endpoint)
 .then(obj => obj.json())
 .then(data => infos.push(...data));
 
-
 $(function() { 
 	products = document.querySelector('.products');
 	var html = products.innerHTML;
