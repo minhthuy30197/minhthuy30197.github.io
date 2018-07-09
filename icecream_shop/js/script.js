@@ -4,17 +4,35 @@ var menu_content = document.querySelector('.menu-content');
 var menu2 = document.querySelector('.menu2');
 var shopping_cart = document.querySelector('.shopping-cart');
 
-function initMap() {
-	var uluru = { lat: 21.0156784, lng: 105.8451308 };
-	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 16,
-		center: uluru
-	});
-	var marker = new google.maps.Marker({
-		position: uluru,
-		map: map
-	});
+var DB = {
+	getData: function(name) {
+		var data;
+		if (typeof(Storage) !== "undefined") {
+			try {
+				data = JSON.parse(localStorage.getItem(name)) || {};
+			} catch(error) {
+				data = {};
+			}
+		} else {
+			data = {};
+			alert('Sorry! No Web Storage support..');
+		}
+		return data;
+	},
+
+	setData: function(name, data) {
+		localStorage.setItem(name, JSON.stringify(data));
+	}
 }
+
+var info_customer = DB.getData("info_customer");
+
+$(function() { 
+	console.log(info_customer);
+	info_customer.cart = info_customer.cart || [];
+	info_customer.compare = info_customer.compare || [];
+	document.querySelector('.count-item').innerHTML = info_customer.cart.length;
+});
 
 function scrollPage(e) {
 	var last_menu_item = document.querySelector('#last-menu-item');
@@ -48,7 +66,99 @@ function closeSearch() {
 	document.getElementById("myOverlay").style.display = "none";
 }
 
-function openCompare() {
+function getList(infos) {
+	var list_icecreams = document.querySelector('.list-icecreams');
+	var html = '';
+	infos.forEach(function(info) {
+		html += '<div class="col-md-4 col-sm-6">' + 
+		'<div class="thumbnail">' +
+		createTag(info.tag, info.discount) +
+		'<img src="' + info.img + '" alt="' + info.name + '" class="img-responsive">' +
+		'<div class="info-icecream text-center">' +
+		'<div class="star-grp">' + createStarGrp(info.rating) + '</div>' +
+		'<div class="name-icecream">' + info.name +  '</div>' +
+		'<div class="price">' + info.price + ' VND </div>' +
+		'</div> <div class="hover-ice"><div class="hover-ice-div">' + 
+		'<div class="btn-grp">' + 
+		'<a href="detail_product.html?id=' + info.id + '"><button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button></a>' + 
+		' <button class="btn-icon" data-id=' + info.id + ' onclick="addToCart(this)"><i class="fas fa-shopping-cart" title="Add to card"></i></button>' +
+		' <button onclick="openCompare(this)" data-id=' + info.id + ' class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i> </button></div></div></div></div></div>';
+	})
+	list_icecreams.innerHTML = html;
+}
+
+function createStarGrp (nums) {
+	var darks = Math.floor(nums);
+	var half = Math.round(nums%darks);
+	var empty = 5 - darks - half;
+	var result = '';
+	for (var i = 0; i<darks; i++) {
+		result += '<i class="fas fa-star"></i> ';
+	}
+	for (var i = 0; i<half; i++) {
+		result += '<i class="fa fa-star-half-full"></i> ';
+	}
+	for (var i = 0; i<empty; i++) {
+		result += '<i class="far fa-star"></i> ';
+	}
+	return result;
+}
+
+function createTag(tag, discount) {
+	var result = '';
+	if (tag != undefined) {
+		result = tag;
+	}
+	if (discount != undefined) {
+		result += ' -' + discount + '%';
+	}
+	if (result != '') {
+		result = '<div class="new-tag"> ' + result + ' </div>';
+	}
+	return result;
+}
+
+function addToCart(button) {
+	var flag = false;
+	for (var i=0; i<info_customer.cart.length; i++) {
+		if (info_customer.cart[i].id == button.dataset.id) {
+			product.count = product.count + 1;
+			flag = true;
+			break;
+		}
+	}
+	if (flag == false) {
+		var product = {
+			"id": button.dataset.id,
+			"count": 1
+		}
+		info_customer.cart.push(product);
+		document.querySelector('.count-item').innerHTML = info_customer.cart.length;
+	}
+	DB.setData("info_customer", info_customer);
+	alert('Successfully add to cart!');
+}
+
+function addToCompareTable(button) {
+	var id = button.dataset.id;
+	for (var i=0; i<info_customer.compare.length; i++) {
+		if (info_customer.compare[i] == id) {
+			return;
+		}
+	}
+	info_customer.compare.push(id);
+	DB.setData("info_customer", info_customer);
+}
+
+function findItem(id) {
+	for (var i=0; i<infos.length; i++) {
+		if (infos[i].id == id) return infos[i];
+	}
+}
+
+function openCompare(button) {
+	addToCompareTable(button);
+	createCompareTable();
 	document.getElementById("compare-table").style.display = "block";
 }
 
@@ -56,4 +166,35 @@ function closeCompare() {
 	document.getElementById("compare-table").style.display = "none";
 }
 
+function removeCompare(button) {
+	var id = button.dataset.id;
+	for (var i=0; i<info_customer.compare.length; i++) {
+		if (info_customer.compare[i] == id) {
+			info_customer.compare.splice(i, 1);
+			break;
+		}
+	}
+	DB.setData("info_customer", info_customer);
+	createCompareTable();
+	document.getElementById("compare-table").style.display = "block";
 
+}
+
+function createCompareTable() {
+	var trs = document.querySelectorAll('.compare-tr');
+	trs[0].innerHTML = '<td></td>';
+	trs[1].innerHTML = '<td></td>';
+	trs[2].innerHTML = '<td>Sumary</td>';
+	trs[3].innerHTML = '<td>Price</td>';
+	trs[4].innerHTML = '<td>Rating</td>';
+	trs[5].innerHTML = '<td></td>';
+	info_customer.compare.forEach(function(compare_item) {
+		var tmp = findItem(compare_item);
+		trs[0].innerHTML += '<td><button class="btn-delete" onclick="removeCompare(this)" data-id="' + tmp.id + '"><i class="fas fa-trash-alt"></i></button></td>';
+		trs[1].innerHTML += '<td><img src="' + tmp.img + '" alt="' + tmp.name + '"></td>';
+		trs[2].innerHTML += '<td>' + tmp.sumary + '</td>';
+		trs[3].innerHTML += '<td>' + tmp.price + ' VND</td>';
+		trs[4].innerHTML += '<td><div class="star-grp">' + createStarGrp(tmp.rating) + '</div></td>';
+		trs[5].innerHTML += '<td><button data-id="' + tmp.id + '" class="btn btn-buy" onclick="addToCart(this)">BUY</button></td>';
+	});
+}

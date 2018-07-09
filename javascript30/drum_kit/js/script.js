@@ -10,8 +10,8 @@ window.addEventListener('keydown', function(e) {
 
 let keys = document.querySelectorAll('.thumb');
 keys.forEach(key => key.addEventListener("transitionend", function(e) {
-		if (e.propertyName == 'transform') {
-			key.classList.remove('playing');
-		}
-	})
+	if (e.propertyName == 'transform') {
+		key.classList.remove('playing');
+	}
+})
 );
