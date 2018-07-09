@@ -59,7 +59,7 @@
 		<div id="myOverlay" class="overlay">
 			<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
 			<div class="overlay-content">
-				<form action="/action_page.php">
+				<form action = "">
 					<input type="text" placeholder="Search.." name="search">
 					<button type="submit"><i class="fa fa-search"></i></button>
 				</form>
@@ -268,9 +268,9 @@
 						<div class="hover-ice">
 							<div class="hover-ice-div">
 								<div class="btn-grp">
-									<button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button>
+									<a href="detail_product.html"><button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button></a>
 									<button class="btn-icon"><i class="fas fa-shopping-cart" title="Add to card"></i></button>
-									<button class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
+									<button onclick="openCompare()" class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i>
 									</button>
 								</div>
 							</div>
@@ -636,11 +636,103 @@
 	<div class="shopping-cart">
 		<a href="cart.html">
 			<div class="shopping-item">
-			<i class="fas fa-shopping-cart"></i>
-			<div class="count-item">
-				0
+				<i class="fas fa-shopping-cart"></i>
+				<div class="count-item">
+					0
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div id="compare-table" class="compare-table">
+		<span class="closebtn" onclick="closeCompare()" title="Close Overlay">×</span>
+		<div class="compare-table-content">
+			<div class="table-responsive">
+				<table class="table">
+					<tr>
+						<td></td>
+						<td><button class="btn-delete"><i class="fas fa-trash-alt"></i></button></td>
+						<td><button class="btn-delete"><i class="fas fa-trash-alt"></i></button></td>
+						<td><button class="btn-delete"><i class="fas fa-trash-alt"></i></button></td>
+						<td><button class="btn-delete"><i class="fas fa-trash-alt"></i></button></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><img src="images/ic1.png" alt="icecream 1"></td>
+						<td><img src="images/ic1.png" alt="icecream 1"></td>
+						<td><img src="images/ic1.png" alt="icecream 1"></td>
+						<td><img src="images/ic1.png" alt="icecream 1"></td>
+					</tr>
+					<tr class="tr-summary">
+						<td>Sumary</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat in atque voluptatum.</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat in atque voluptatum.</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat in atque voluptatum.</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat in atque voluptatum.</td>
+					</tr>
+					<tr>
+						<td>Price</td>
+						<td>100.000 VND</td>
+						<td>100.000 VND</td>
+						<td>100.000 VND</td>
+						<td>100.000 VND</td>
+					</tr>
+					<tr>
+						<td>Rating</td>
+						<td>
+							<div class="star-grp">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</td>
+						<td>
+							<div class="star-grp">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</td>
+						<td>
+							<div class="star-grp">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</td>
+						<td>
+							<div class="star-grp">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<button class="btn btn-buy">BUY</button>
+						</td>
+						<td>
+							<button class="btn btn-buy">BUY</button>
+						</td>
+						<td>
+							<button class="btn btn-buy">BUY</button>
+						</td>
+						<td>
+							<button class="btn btn-buy">BUY</button>
+						</td>
+					</tr>
+				</table>
 			</div>
-		</a>
 		</div>
 	</div>
 

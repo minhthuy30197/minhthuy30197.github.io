@@ -48,3 +48,12 @@ function closeSearch() {
 	document.getElementById("myOverlay").style.display = "none";
 }
 
+function openCompare() {
+	document.getElementById("compare-table").style.display = "block";
+}
+
+function closeCompare() {
+	document.getElementById("compare-table").style.display = "none";
+}
+
+
