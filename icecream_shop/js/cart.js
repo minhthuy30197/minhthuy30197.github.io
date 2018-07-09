@@ -8,34 +8,33 @@ fetch(endpoint)
 $(function() { 
 	products = document.querySelector('.products');
 	var html = products.innerHTML;
-	var cost_bill = 0;
 	info_customer.cart.forEach(function(product) {
-		infos.forEach(function(info) {
-			if (info.id == product.id) {
-				total = product.count * info.price;
-				cost_bill += total;
-				html += '<li class="product" data-id="' + product.id + '"> <div class="col info-product">' +
-				'<div class="img-product"><img src="' + info.img + '" alt="' + info.name + '" class="img-responsive"></div>' +
-				'<div class="info-detail">' + info.name + '</div></div>' +
-				'<div class="col"><span class="price">' + info.price + '</span> VND </div>' + 
-				'<div class="col"><input type="number" class="form-control" name="quantity" value="' + product.count + '" min="0" title="Quantity" onChange="changeCount(this)"></div>' +
-				'<div class="col"><span class="total">' + total + '</span> VND</div>' +
-				'<div class="remove"><button onclick="removeProduct(this)" class="btn btn-remove"><i class="fas fa-times"></i></button></div></li>';
-			}
-		});
+		html += '<li class="product" data-id="' + product.id + '"> <div class="col info-product">' +
+		'<div class="img-product"><img src="' + product.img + '" alt="' + product.name + '" class="img-responsive"></div>' +
+		'<div class="info-detail">' + product.name + '</div></div>' +
+		'<div class="col"><span class="price">' + (product.total/product.count) + '</span> VND </div>' + 
+		'<div class="col"><input type="number" class="form-control" name="quantity" value="' + product.count + '" min="0" title="Quantity" onChange="changeCount(this)"></div>' +
+		'<div class="col"><span class="total">' + product.total + '</span> VND</div>' +
+		'<div class="remove"><button onclick="removeProduct(this)" class="btn btn-remove"><i class="fas fa-times"></i></button></div></li>';
 	});
 	products.innerHTML = html;
-	document.getElementById('subtotal').innerHTML = cost_bill;
-	document.getElementById('total').innerHTML = cost_bill;
+	document.getElementById('subtotal').innerHTML = info_customer.subtotal;
+	document.getElementById('total').innerHTML = info_customer.total;
 });
 
 function removeProduct(button) {
 	var id = button.parentNode.parentNode.dataset.id;
+	var total = info_customer.total;
 	info_customer.cart.forEach(function(product, i) {
 		if (product.id == id) {
+			total -= product.total;
 			var delete_item = document.querySelector(`li[data-id="${id}"]`);
 			delete_item.parentNode.removeChild(delete_item);
 			info_customer.cart.splice(i, 1);
+			info_customer.subtotal = total;
+			info_customer.total = total;
+			document.getElementById('subtotal').innerHTML = total;
+			document.getElementById('total').innerHTML = total;
 			DB.setData("info_customer", info_customer);
 			document.querySelector('.count-item').innerHTML = info_customer.cart.length;
 		}
@@ -44,24 +43,25 @@ function removeProduct(button) {
 
 function changeCount(input) {
 	var id = input.parentNode.parentNode.dataset.id;
-	var total = Number(document.getElementById('total').innerHTML);
-	var price = Number(input.parentNode.parentNode.querySelector('.price').innerHTML);
+	var total = info_customer.total;
 	info_customer.cart.forEach(function(product, i) {
 		if (product.id == id) {
-			total -= price * product.count;
+			total -= product.total;
 			if (input.value != 0) {
+				product.total = (product.total/product.count) * input.value;
+				total += product.total;
+				console.log(total);
 				product.count = input.value;
-				total += price * input.value;
-				input.parentNode.parentNode.querySelector('.total').innerHTML = price * input.value;
+				input.parentNode.parentNode.querySelector('.total').innerHTML = product.total;
 			} else {
-				info_customer.cart.splice(i, 1);
-				var delete_item = document.querySelector(`li[data-id="${id}"]`);
-				delete_item.parentNode.removeChild(delete_item);
+				removeProduct(input.parentNode.parentNode.querySelector('.btn-remove'));
+				return;
 			}
 			document.getElementById('subtotal').innerHTML = total;
 			document.getElementById('total').innerHTML = total;
+			info_customer.subtotal = total;
+			info_customer.total = total;
 			DB.setData("info_customer", info_customer);
-			document.querySelector('.count-item').innerHTML = info_customer.cart.length;
 		}
 	});
 }

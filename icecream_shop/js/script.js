@@ -31,6 +31,8 @@ $(function() {
 	console.log(info_customer);
 	info_customer.cart = info_customer.cart || [];
 	info_customer.compare = info_customer.compare || [];
+	info_customer.total = info_customer.total || 0;
+	info_customer.subtotal = info_customer.subtotal || 0;
 	document.querySelector('.count-item').innerHTML = info_customer.cart.length;
 });
 
@@ -122,17 +124,27 @@ function addToCart(button) {
 	var flag = false;
 	for (var i=0; i<info_customer.cart.length; i++) {
 		if (info_customer.cart[i].id == button.dataset.id) {
-			product.count = product.count + 1;
+			product.total = (product.total / product.count) + product.total;
+			info_customer.total = info_customer.total + (product.total / product.count);
+			info_customer.subtotal = info_customer.total;
+			product.count = product.count + 1;	
 			flag = true;
 			break;
 		}
 	}
 	if (flag == false) {
+		var item = findItem(button.dataset.id);
+		console.log(item);
 		var product = {
-			"id": button.dataset.id,
-			"count": 1
+			"id": item.id,
+			"img": item.img,
+			"name": item.name,
+			"count": 1,
+			"total": item.price
 		}
 		info_customer.cart.push(product);
+		info_customer.total = info_customer.total + item.price;
+		info_customer.subtotal = info_customer.total;
 		document.querySelector('.count-item').innerHTML = info_customer.cart.length;
 	}
 	DB.setData("info_customer", info_customer);
@@ -177,7 +189,6 @@ function removeCompare(button) {
 	DB.setData("info_customer", info_customer);
 	createCompareTable();
 	document.getElementById("compare-table").style.display = "block";
-
 }
 
 function createCompareTable() {
