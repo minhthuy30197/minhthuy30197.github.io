@@ -136,7 +136,7 @@
 	{
 		"id": "ic8",
 		"name": "Icecream 8",
-		"img": "images/ic7.png",
+		"img": "images/ic8.png",
 		"price": 95000,
 		"rating": 4,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
@@ -150,7 +150,7 @@
 	{
 		"id": "ic9",
 		"name": "Icecream 9",
-		"img": "images/ic7.png",
+		"img": "images/ic9.png",
 		"price": 95000,
 		"rating": 4,
 		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
