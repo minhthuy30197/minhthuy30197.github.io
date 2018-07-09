@@ -58,6 +58,7 @@
 .review-item {
 	display: flex;
 	align-items: center;
+	margin-bottom: 1em;
 }
 
 .comment {
@@ -171,8 +172,17 @@ input[type="number"] {
 }
 
 .related-item {
+	position: relative;
 	flex: 1;
 	padding: 1em;
 	border-top: 1px solid #363739;
+}
+
+.hover-ice {
+}
+
+.related-item:hover .hover-ice {
+	opacity: 1;
+	visibility: visible;
 }
 

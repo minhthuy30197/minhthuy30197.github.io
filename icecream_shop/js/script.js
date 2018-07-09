@@ -28,7 +28,6 @@ var DB = {
 var info_customer = DB.getData("info_customer");
 
 $(function() { 
-	console.log(info_customer);
 	info_customer.cart = info_customer.cart || [];
 	info_customer.compare = info_customer.compare || [];
 	info_customer.total = info_customer.total || 0;
@@ -83,7 +82,7 @@ function getList(infos) {
 		'</div> <div class="hover-ice"><div class="hover-ice-div">' + 
 		'<div class="btn-grp">' + 
 		'<a href="detail_product.html?id=' + info.id + '"><button class="btn-icon"><i class="fas fa-eye" title="See detail"></i></button></a>' + 
-		' <button class="btn-icon" data-id=' + info.id + ' onclick="addToCart(this)"><i class="fas fa-shopping-cart" title="Add to card"></i></button>' +
+		' <button class="btn-icon" data-id="' + info.id + '" onclick="addToCart(this, 1)"><i class="fas fa-shopping-cart" title="Add to card"></i></button>' +
 		' <button onclick="openCompare(this)" data-id=' + info.id + ' class="btn-icon"><i class="fas fa-sliders-h" title="Compare product"></i> </button></div></div></div></div></div>';
 	})
 	list_icecreams.innerHTML = html;
@@ -120,30 +119,29 @@ function createTag(tag, discount) {
 	return result;
 }
 
-function addToCart(button) {
+function addToCart(button, count) {
 	var flag = false;
 	for (var i=0; i<info_customer.cart.length; i++) {
-		if (info_customer.cart[i].id == button.dataset.id) {
-			product.total = (product.total / product.count) + product.total;
-			info_customer.total = info_customer.total + (product.total / product.count);
+		if (info_customer.cart[i].id == button.dataset.id) {		
+			info_customer.total = info_customer.total + (info_customer.cart[i].total / info_customer.cart[i].count)*count;
+			info_customer.cart[i].total = (info_customer.cart[i].total / info_customer.cart[i].count)*count + info_customer.cart[i].total;
 			info_customer.subtotal = info_customer.total;
-			product.count = product.count + 1;	
+			info_customer.cart[i].count = info_customer.cart[i].count + count;	
 			flag = true;
 			break;
 		}
 	}
 	if (flag == false) {
 		var item = findItem(button.dataset.id);
-		console.log(item);
 		var product = {
 			"id": item.id,
 			"img": item.img,
 			"name": item.name,
-			"count": 1,
-			"total": item.price
+			"count": count,
+			"total": item.price*count
 		}
 		info_customer.cart.push(product);
-		info_customer.total = info_customer.total + item.price;
+		info_customer.total = info_customer.total + product.total;
 		info_customer.subtotal = info_customer.total;
 		document.querySelector('.count-item').innerHTML = info_customer.cart.length;
 	}
@@ -206,6 +204,6 @@ function createCompareTable() {
 		trs[2].innerHTML += '<td>' + tmp.sumary + '</td>';
 		trs[3].innerHTML += '<td>' + tmp.price + ' VND</td>';
 		trs[4].innerHTML += '<td><div class="star-grp">' + createStarGrp(tmp.rating) + '</div></td>';
-		trs[5].innerHTML += '<td><button data-id="' + tmp.id + '" class="btn btn-buy" onclick="addToCart(this)">BUY</button></td>';
+		trs[5].innerHTML += '<td><button data-id="' + tmp.id + '" class="btn btn-buy" onclick="addToCart(this, 1)">BUY</button></td>';
 	});
 }
