@@ -110,10 +110,10 @@
 
 .infos {
 	padding: 1em;
+	text-align: center;
 }
 
 .intro {
-	text-align: justify;
 	padding-bottom: 1.5em;
 	border-bottom: 1px solid #363739;
 }
@@ -178,10 +178,59 @@ input[type="number"] {
 	border-top: 1px solid #363739;
 }
 
-.hover-ice {
+.images-product {
+	display: flex;
+	flex-direction: column;
+}
+
+.big-img {
+	flex: 1 100%;
+}
+
+.small-imgs {
+	flex: 1 100%;
 }
 
 .related-item:hover .hover-ice {
 	opacity: 1;
 	visibility: visible;
+}
+
+@media (max-width: 991px) {
+	.related-product {
+		margin-top: 2em;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 650px) {
+	.related-products {
+		flex-direction: row;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 500px) {
+	.images-product {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.big-img {
+		flex: 3;
+	}
+
+	.small-imgs {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.small-img {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.infos {
+		text-align: justify;
+	}
 }

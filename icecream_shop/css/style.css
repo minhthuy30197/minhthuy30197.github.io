@@ -992,6 +992,10 @@ button#signin:hover, button#confirmsignup:hover {
 	.banner {
 		height: 500px;
 	}
+
+	.social-grp {
+		width: 100%;
+	}
 }
 
 @media (min-width: 500px) {
@@ -1041,6 +1045,10 @@ button#signin:hover, button#confirmsignup:hover {
 	.banner {
 		height: 600px;
 	}
+
+	.social-grp {
+		width: 60%;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1058,10 +1066,6 @@ button#signin:hover, button#confirmsignup:hover {
 
 	.line-digit {
 		visibility: hidden;
-	}
-	
-	.social-grp {
-		width: 100%;
 	}
 
 	.img-footer {
@@ -1145,6 +1149,10 @@ button#signin:hover, button#confirmsignup:hover {
 
 	.banner .item {
 		width: 60%;
+	}
+
+	.social-grp {
+		width: 80%;
 	}
 }
 
@@ -1261,7 +1269,6 @@ button#signin:hover, button#confirmsignup:hover {
 .social-item {
 	width: 20%;
 	float: left;
-	padding: 5px;
 }
 
 .review {
