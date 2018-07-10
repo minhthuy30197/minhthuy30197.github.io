@@ -13,7 +13,13 @@ body {
 	clear: both;
 }
 
+.header {
+	background-color: #2e2e2e;
+	color: white;
+}
+
 .menu {
+	background-color: transparent;
 	width: 100%;
 	padding: 0px;
 }
@@ -93,14 +99,14 @@ body {
 	padding: 0px 15px;
 }
 
-.header {
+.banner {
 	background-image: url('../images/ice3.jpg');
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: center; 
+	background-position: center bottom; 
 	position: relative;
 	color: white;
 }
@@ -247,13 +253,13 @@ body {
 	color: white;
 }
 
-.banner {
+.banner-content {
 	text-align: center;
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .banner button {
@@ -982,6 +988,10 @@ button#signin:hover, button#confirmsignup:hover {
 	.social-item a i {
 		font-size: 0.6em;
 	}
+
+	.banner {
+		height: 500px;
+	}
 }
 
 @media (min-width: 500px) {
@@ -1027,6 +1037,10 @@ button#signin:hover, button#confirmsignup:hover {
 	.enter-mail {
 		width: 60%;
 	}
+
+	.banner {
+		height: 600px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1034,10 +1048,6 @@ button#signin:hover, button#confirmsignup:hover {
 		margin-top: 0.5em;
 		background-color: #363739; 
 		text-align: center;
-	}
-
-	.header {
-		height: 800px;
 	}
 
 	.about-us img {
@@ -1063,6 +1073,10 @@ button#signin:hover, button#confirmsignup:hover {
 	.review {
 		padding-top: 10em;
 	}
+
+	.banner .item {
+		width: 80%;
+	}
 }
 
 @media (min-width: 768px) {
@@ -1074,8 +1088,8 @@ button#signin:hover, button#confirmsignup:hover {
 		width:500px;
 	}
 
-	.header {
-		height: 1000px;
+	.banner {
+		height: 700px;
 	}
 
 	.modal-body{
@@ -1128,6 +1142,10 @@ button#signin:hover, button#confirmsignup:hover {
 	.review {
 		padding-top: 15em;
 	}
+
+	.banner .item {
+		width: 60%;
+	}
 }
 
 @media (min-width: 992px) {
@@ -1138,6 +1156,10 @@ button#signin:hover, button#confirmsignup:hover {
 
 	body {
 		font-size: 17px;
+	}
+
+	.banner {
+		height: 800px;
 	}
 
 	.social-grp {
