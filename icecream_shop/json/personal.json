@@ -1,0 +1,42 @@
+{
+	"name": "Nguyen Van A",
+	"email": "nguyena@gmail.com",
+	"phone": "123456789",
+	"address": "14 Nguyen Dinh Chieu, Hai Ba Trung, Ha Noi",
+	"history": [
+		{
+			"date": "20/11/2017",
+			"total": 457000,
+			"subtotal": 457000,
+			"shipping": 0,
+			"state": "Received",
+			"detail": [
+				{
+					"id": "ic1",
+					"count": 2
+				},
+				{
+					"id": "ic2",
+					"count": 1
+				},
+				{
+					"id": "ic5",
+					"count": 1
+				}
+			]
+		},
+		{
+			"date": "10/7/2018",
+			"total": 100000,
+			"subtotal": 100000,
+			"shipping": 0,
+			"state": "Received",
+			"detail": [
+				{
+					"id": "ic1",
+					"count": 1
+				}
+			]
+		}
+	]
+}
