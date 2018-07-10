@@ -42,8 +42,8 @@ function scrollPage(e) {
 		last_menu_item.innerHTML = '<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">' +
 		'<i class="fas fa-user-circle"></i> <span class="caret"></span>' + 
 		'</a> <ul class="dropdown-menu"> '+
-		'<li>Login</li>' + 
-		'<li>Sign in</li>' + 
+		'<li><a href="#signup" data-toggle="modal" data-target=".log-sign">Login</a></li>' + 
+		'<li><a href="#signup" data-toggle="modal" data-target=".log-sign">Sign up</a></li>' + 
 		'</ul>';		
 		menu2.classList.add('container-fluid');
 		nav.classList.add('container', 'fixed-navbar');
@@ -207,3 +207,21 @@ function createCompareTable() {
 		trs[5].innerHTML += '<td><button data-id="' + tmp.id + '" class="btn btn-buy" onclick="addToCart(this, 1)">BUY</button></td>';
 	});
 }
+
+$('.input').blur(function() {
+	var $this = $(this);
+	if ($this.val())
+		$this.addClass('used');
+	else
+		$this.removeClass('used');
+});
+
+$('#tab1').on('click' , function(){
+	$('#tab1').addClass('login-shadow');
+	$('#tab2').removeClass('signup-shadow');
+});
+
+$('#tab2').on('click' , function(){
+	$('#tab2').addClass('signup-shadow');
+	$('#tab1').removeClass('login-shadow');
+});

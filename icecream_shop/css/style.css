@@ -710,12 +710,12 @@ ol {
 	padding-bottom: 2em;
 }
 
-table {
+.contact table {
 	width: 100%;
-	
+	border-collapse: initial;
 }
 
-tr > td{
+.contact tr > td{
 	padding-bottom: 1em;
 }
 
@@ -907,7 +907,6 @@ div#map{
 	bottom: 1em;
 	right: 1em;
 	font-size: 1.5em;
-	padding: 0.3em 0.5em;
 	background-color: #add8a6;
 	box-shadow: 0px 0px 5px 1px lightgray;
 	opacity: 0;
@@ -923,14 +922,200 @@ div#map{
 }
 
 .shopping-item {
+	padding: 0.3em 0.5em;
 	position: relative;
 }
 
 .count-item {
 	position: absolute;
-	top: -0.2em;
-	right: -0.2em;
+	top: -0.5em;
+	right: -0.5em;
 	color: red;
 	font-size: 0.8em;
 	font-weight: bold;
+	background-color: white;
+	width: 1.3em;
+	height: 1.3em;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.modal .tab-style{
+	font-size: 1em;
+	width:50%;
+	background-color:#f2f2f2;
+	text-align:center;
+}
+
+.modal .nav-tabs > li > a {
+	margin-right: 0px;
+	color:grey;
+}
+
+.group2 { 
+	position: relative; 
+	margin-top: 16px; 
+}
+
+.btn-block{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:18px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {   background-color: #fbffff;
+	color:#363739;
+}
+
+.login-shadow {
+	-webkit-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+	-moz-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+	box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+	z-index:1;
+}
+
+.signup-shadow {
+	-webkit-box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
+	-moz-box-shadow: -5px -5px 6px 0px rgba(82,82,82,0.52);
+	box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
+}
+
+.forgot-link a {
+	color: #363739;
+}
+
+button#signin, button#confirmsignup {
+	background-color: #363739;
+	color: white;
+}
+
+button#signin:hover, button#confirmsignup:hover {
+	background-color: #add8a6;
+}
+
+.modal-header{
+	background-color:#e5ecf4;
+}
+
+.group { 
+	position: relative; 
+	margin-top: 30px; 
+}
+
+.modal input {
+	font-size: 1em;
+	padding: 10px 10px 10px 5px;
+	-webkit-appearance: none;
+	display: block;
+	background: none;
+	color: #636363;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+.modal input:focus { 
+	outline: none; 
+}
+
+.modal label {
+	color: #757575; 
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: -10px;
+	top: 10px;
+	transition: all 0.2s ease;
+}
+
+.modal input:focus ~ .label, .modal input.used ~ .label {
+	top: -20px;
+	transform: scale(.75); left:-15px;
+	color: #363739s;
+}
+
+.bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.bar:before, .bar:after {
+	content: '';
+	height: 2px; 
+	width: 0;
+	bottom: 1px; 
+	position: absolute;
+	background: #363739; 
+	transition: all 0.2s ease;
+}
+
+.bar:before { 
+	left: 50%; 
+}
+
+.bar:after { 
+	right: 50%; 
+}
+
+.modal input:focus ~ .bar:before, .modal input:focus ~ .bar:after { 
+	width: 50%; 
+}
+
+.highlight {
+	position: absolute;
+	height: 60%; 
+	width: 100px; 
+	top: 25%; 
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.modal input:focus ~ .highlight {
+	animation: inputHighlighter 0.3s ease;
+}
+
+
+@media  screen and (max-width: 767px) and (min-width: 576px){
+	#myModal{
+		margin-left:20%;
+		margin-right:20%;
+	}
+
+	#forgot-password{
+		margin-left:20%;
+		margin-right:20%;
+	}
+} 
+
+
+@media screen and (min-width: 768px) {
+	#myModal .modal-dialog  {
+		width:500px;
+	}
+
+	#forgot-password .modal-dialog{
+		width:500px;
+	}
+
+	.modal-body{
+		padding-left:50px;
+		padding-right:50px;
+	}
+}
+
+
+.modal-body{
+	background-image:url('../images/modal.png');
+	background-size:cover;
+	z-index:4;
+}
+
+.login a {
+	outline: none;
+	color: white;
+	text-decoration: none;
 }
