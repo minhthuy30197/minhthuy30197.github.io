@@ -389,11 +389,6 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.title-video {
-	font-size: 60px;
-	color: white;
-}
-
 .video-title {
 	font-size: 30px;
 }
@@ -885,7 +880,7 @@ button#signin:hover, button#confirmsignup:hover {
 		margin-right:20%;
 	}
 
-	.list-promotion, .list-icecreams, .list-why, .contact-con, .form-info, .annouce-checkout, .img-about {
+	.filter, .list-promotion, .list-icecreams, .list-why, .contact-con, .form-info, .annouce-checkout, .img-about {
 		padding-left: 5em;
 		padding-right: 5em;
 	}
@@ -949,7 +944,7 @@ button#signin:hover, button#confirmsignup:hover {
 		font-size: 14px;
 	}
 
-	.list-promotion, .list-icecreams, .list-why, .contact-con, .form-info, .annouce-checkout, .img-about, .blog {
+	.filter, .list-promotion, .list-icecreams, .list-why, .contact-con, .form-info, .annouce-checkout, .img-about, .blog {
 		padding-left: 2em;
 		padding-right: 2em;
 	}	
@@ -1316,4 +1311,9 @@ button#signin:hover, button#confirmsignup:hover {
 	margin-bottom: 1em;
 	color: #add8a6;
 	font-weight: bold;
+}
+
+.title-video {
+	font-size: 3em;
+	color: white;
 }
