@@ -58,6 +58,15 @@
 			</div>
 		</div>
 	</div>
+	<div id="myOverlay" class="overlay">
+		<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+		<div class="overlay-content">
+			<form action = "">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+	</div>
 	<div class="my-banner">
 		<div class="waves"></div>
 		<div class="banner-title">
@@ -91,7 +100,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 img-about">
 					<img src="images/chef1.png" alt="chef1" class="img-responsive">
 					<br>
 					<img src="images/chef2.png" alt="chef1" class="img-responsive">
@@ -159,7 +168,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-5">
+				<div class="col-sm-5 col-xs-6">
 					<div class="footer-title">
 						<i class="fas fa-map-marker-alt"></i>&emsp;LOCATION
 					</div>
@@ -182,7 +191,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-4  col-xs-6">
 					<div class="footer-title">
 						<i class="fas fa-hourglass-half"></i>&emsp;OPEN AT
 					</div>
@@ -222,7 +231,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-12">
 					<div class="imgs">
 						<div class="img-footer">
 							<div class="thumb">
@@ -279,11 +288,11 @@
 	<div class="shopping-cart">
 		<a href="cart.html">
 			<div class="shopping-item">
-			<i class="fas fa-shopping-cart"></i>
-			<div class="count-item">
-				0
-			</div>
-		</a>
+				<i class="fas fa-shopping-cart"></i>
+				<div class="count-item">
+					0
+				</div>
+			</a>
 		</div>
 	</div>
 

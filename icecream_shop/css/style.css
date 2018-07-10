@@ -7,11 +7,6 @@
 
 body {
 	background-color: #e1f2e0;
-	font-size: 18px;
-}
-
-.container {
-	/*width: 1140px;*/
 }
 
 .clear {
@@ -55,12 +50,6 @@ body {
 	margin-bottom: 0px;
 }
 
-.navbar-default .navbar-nav>li>a {
-	color :white;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
 .navbar-default .navbar-nav>li>a:hover {
 	color: #add8a6;
 }
@@ -68,15 +57,6 @@ body {
 .navbar.navbar-default > .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
-}
-
-.navbar-collapse {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.nav.navbar-nav.navbar-left > li:nth-child(1) > a {
-	padding-left: 0px;
 }
 
 .nav.navbar-nav.navbar-right > li:nth-child(4) > a {
@@ -122,7 +102,6 @@ body {
 	background-size: cover;
 	background-position: center; 
 	position: relative;
-	height: 1000px;
 	color: white;
 }
 
@@ -277,50 +256,14 @@ body {
 	transform: translateY(-50%);
 }
 
-.name {
-	font-family: 'Courgette', cursive;
-	font-size: 45px;
-	line-height: 55px;
-}
-
-.slogan {
-	font-size: 45px;
-	font-weight: bold;
-	line-height: 50px;
-}
-
-.intro {
-	line-height: 25px;
-}
-
 .banner button {
 	outline: none;
 	border-radius: 12px;
 	margin-top: 30px;
 }
 
-.btn-shopping {
-	background-color: #e1f2e0;
-	padding: 10px 15px;
-	color: #493521;
-	font-weight: bold;
-	transition: all 0.5s linear;
-}
-
-.about-us {
-	margin-top: 50px;
-	margin-bottom: 80px;
-}
-
 .about-left {
 	padding-right: 5%;
-}
-
-.title {
-	font-weight: bold;
-	font-family: 'Courgette', cursive;
-	color: #493521;
-	font-size: 30px;
 }
 
 .btn-shopping:hover {
@@ -356,7 +299,6 @@ body {
 	color: white;
 	padding: 10px 15px;
 	border-radius: 5px;
-	font-weight: light;
 }
 
 .digits-div {
@@ -384,12 +326,6 @@ body {
 	height: 50px;
 }
 
-.digit {
-	font-size: 75px;
-	line-height: 85px;
-	letter-spacing: 5px;
-}
-
 .passion-div {
 	position: relative;
 }
@@ -411,41 +347,9 @@ body {
 	right: 20%;
 }
 
-.passion {
-	font-size: 22px;
-	word-spacing: 10px;
-	letter-spacing: 2px;
-	width: 30%;
-	margin: 0 auto;
-}
-
 .passion-p {
 	text-align: justify;
 	padding: 20px;
-}
-
-.passion-p1 {
-	padding-left: 10%;
-}
-
-.passion-p2 {
-	padding-right: 10%;
-}
-
-.why {
-	background-image: url('../images/hold-icecream.png');
-	background-repeat: no-repeat;
-	background-position:center bottom;
-	padding: 100px 0px;
-}
-
-.reason {
-	background-color: white;
-	padding: 20px;
-	padding-top: 50px;
-	box-shadow: 0px 0px 10px 2px lightgray;
-	position: relative;
-	margin-top: 100px;
 }
 
 .icon-reason {
@@ -457,12 +361,6 @@ body {
 	width: 100px;
 	height: 100px;
 	padding: 15px;
-}
-
-.reason-title {
-	font-weight: bold;
-	color: #493521;
-	font-size: 20px;
 }
 
 .reason-content {
@@ -529,12 +427,6 @@ body {
 	z-index: -100;
 }
 
-
-.catolog {
-	padding: 80px 0px;
-	padding-bottom: 0px;
-}
-
 .thumbnail {
 	border-radius: 0px;
 	box-shadow: 0px 0px 10px 1px gray;
@@ -546,12 +438,6 @@ body {
 
 .info-icecream {
 	margin-top: 10%;
-}
-
-.name-icecream {
-	color: #493521;
-	font-size: 1.3em;
-	font-weight: bolder;
 }
 
 .new-tag {
@@ -618,104 +504,12 @@ body {
 	outline: none;
 }
 
-.review {
-	background-image: url('../images/bg-ic.jpg');
-	background-repeat: no-repeat;
-	background-position:center top;
-	padding-top: 26%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding-bottom: 100px;
-}
-
-.review > .container > .row > .text-center > .title {
-	color: white;
-	margin-bottom: 5%;
-	margin-top: 5%;
-}
-
-.item {
-	width: 60%;
-	margin: 0 auto;
-}
-
-.item img {
-	width: 100px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.review-content {
-	color: white;
-}
-
-.carousel-control.right, .carousel-control.left {
-	background-image: none;
-}
-
-.carousel-indicators {
-	bottom: -30px;
-}
-
 ol {
 	margin-bottom: 0px;
 }
 
-
 .carousel-control {
 	opacity: 1;
-}
-
-.freeship-content {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-}
-
-.freeship-content > .freeship-text2 {
-	-webkit-flex: 2;  /* Safari 6.1+ */
-	-ms-flex: 2;  /* IE 10 */    
-	flex: 2;
-	text-align: left;
-}
-
-.freeship-content > .freeship-text1 {
-	-webkit-flex: 2;  /* Safari 6.1+ */
-	-ms-flex: 2;  /* IE 10 */    
-	flex: 2;
-	text-align: center;
-}
-
-.freeship-content > .freeship-btn {
-	-webkit-flex: 1;  /* Safari 6.1+ */
-	-ms-flex: 1;  /* IE 10 */    
-	flex: 1;
-	text-align: left;
-}
-
-.freeship {
-	background-color: #363739;
-	width: 100%;
-	padding: 30px 0px;
-	vertical-align: middle;
-}
-
-.freeship-text1 {
-	color: #e1f2e0;
-	font-size: 48px;
-	font-family: 'Courgette', cursive;
-	letter-spacing: 10px;
-}
-
-.freeship-text2 {
-	line-height: 60px;
-	height: 100%;
-	color: white;
-	font-size: 28px;
-	word-spacing: 2px;
 }
 
 .contact {
@@ -762,7 +556,6 @@ textarea {
 .enter-mail {
 	z-index: 1;
 	position: absolute;
-	width: 30%;
 	top: -1.5em;
 	left: 50%;
 	transform: translateX(-50%);
@@ -788,13 +581,6 @@ footer {
 	font-size: 0.9em;
 }
 
-.footer-title {
-	font-size: 20px;
-	margin-bottom: 1em;
-	color: #add8a6;
-	font-weight: bold;
-}
-
 .info-footer {
 	font-size: 0.9em;
 }
@@ -813,12 +599,6 @@ footer a:hover {
 	width: 100%;
 }
 
-.img-footer {
-	width: 33.33333%;
-	float: left;
-	padding: 0.5em;
-}
-
 .thumb {
 	overflow: hidden;
 }
@@ -835,16 +615,6 @@ footer a:hover {
 
 .foot {
 	padding: 0;
-}
-
-.social-grp {
-	width: 60%;
-}
-
-.social-item {
-	width: 20%;
-	float: left;
-	padding: 5px;
 }
 
 .my-banner {
@@ -1094,8 +864,11 @@ button#signin:hover, button#confirmsignup:hover {
 	animation: inputHighlighter 0.3s ease;
 }
 
+.list-products {
+	margin-top: 3em;
+}
 
-@media  screen and (max-width: 767px) and (min-width: 576px){
+@media  screen and (max-width: 767px) and (min-width: 500px){
 	#myModal{
 		margin-left:20%;
 		margin-right:20%;
@@ -1105,24 +878,22 @@ button#signin:hover, button#confirmsignup:hover {
 		margin-left:20%;
 		margin-right:20%;
 	}
+
+	.list-promotion, .list-icecreams, .list-why, .contact-con, .form-info, .annouce-checkout, .img-about {
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+
+	.img-about img {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.social-item a i {
+		font-size: 0.8em;
+	}
 } 
-
-
-@media screen and (min-width: 768px) {
-	#myModal .modal-dialog  {
-		width:500px;
-	}
-
-	#forgot-password .modal-dialog{
-		width:500px;
-	}
-
-	.modal-body{
-		padding-left:50px;
-		padding-right:50px;
-	}
-}
-
 
 .modal-body{
 	background-image:url('../images/modal.png');
@@ -1134,4 +905,386 @@ button#signin:hover, button#confirmsignup:hover {
 	outline: none;
 	color: white;
 	text-decoration: none;
+}
+
+.name {
+	font-family: 'Courgette', cursive;
+	font-size: 2em;
+}
+
+.slogan {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.intro-shop {
+	line-height: 1.2em;
+}
+
+.freeship {
+	background-color: #363739;
+	width: 100%;
+	padding: 2em 0px;
+}
+
+.freeship-content {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color :white;
+}
+
+@media (max-width: 499px) {
+	body {
+		font-size: 14px;
+	}
+
+	.list-promotion, .list-icecreams, .list-why, .contact-con, .form-info, .annouce-checkout, .img-about, .blog {
+		padding-left: 2em;
+		padding-right: 2em;
+	}	
+
+	.freeship-content > .freeship-text2 {
+		-webkit-flex: 2 100%;  
+		-ms-flex: 2 100%;  
+		flex: 2 100%;
+		text-align: center;
+	}
+
+	.freeship-content > .freeship-text1 {
+		-webkit-flex: 2 100%;  
+		-ms-flex: 2 100%;    
+		flex: 2 100%;
+		text-align: center;
+	}
+
+	.freeship-content > .freeship-btn {
+		-webkit-flex: 1 100%;  
+		-ms-flex: 1 100%;    
+		flex: 1 100%;
+		text-align: center;
+	}
+
+	.enter-mail {
+		width: 94%;
+	}
+
+	.img-about img {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.social-item a i {
+		font-size: 0.6em;
+	}
+}
+
+@media (min-width: 500px) {
+	body {
+		font-size: 15px;
+	}
+
+	.name {
+		font-size: 3em;
+	}
+
+	.slogan {
+		font-size: 3em;
+		line-height: 1.3em;
+	}
+
+	.intro {
+		line-height: 1.2em;
+	}
+
+	.freeship-content > .freeship-text2 {
+		-webkit-flex: 2;  
+		-ms-flex: 2;  
+		flex: 2;
+		text-align: center;
+	}
+
+	.freeship-content > .freeship-text1 {
+		-webkit-flex: 2;  
+		-ms-flex: 2;    
+		flex: 2;
+		text-align: center;
+	}
+
+	.freeship-content > .freeship-btn {
+		-webkit-flex: 1 100%;  
+		-ms-flex: 1 100%;    
+		flex: 1 100%;
+		text-align: center;
+		padding-top: 1em;
+	}
+
+	.enter-mail {
+		width: 60%;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-collapse {
+		margin-top: 0.5em;
+		background-color: #363739; 
+		text-align: center;
+	}
+
+	.header {
+		height: 800px;
+	}
+
+	.about-us img {
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.line-digit {
+		visibility: hidden;
+	}
+	
+	.social-grp {
+		width: 100%;
+	}
+
+	.img-footer {
+		width: 11%;
+		float: left;
+		padding: 0.5em;
+	}
+
+	.review {
+		padding-top: 10em;
+	}
+}
+
+@media (min-width: 768px) {
+	#myModal .modal-dialog  {
+		width:500px;
+	}
+
+	#forgot-password .modal-dialog{
+		width:500px;
+	}
+
+	.header {
+		height: 1000px;
+	}
+
+	.modal-body{
+		padding-left:50px;
+		padding-right:50px;
+	}
+
+	.navbar-collapse {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.nav.navbar-nav.navbar-left > li:nth-child(1) > a {
+		padding-left: 0px;
+	}
+
+	body {
+		font-size: 16px;
+	}
+
+	.passion-p1 {
+		padding-left: 10%;
+	}
+
+	.passion-p2 {
+		padding-right: 10%;
+	}
+
+	.freeship-content > .freeship-text2 {
+		text-align: center;
+	}
+
+	.freeship-content > .freeship-btn {
+		-webkit-flex: 1;  
+		-ms-flex: 1;    
+		flex: 1;
+		text-align: left;
+	}
+
+	.enter-mail {
+		width: 30%;
+	}
+
+	.img-footer {
+		width: 33.33333%;
+		float: left;
+		padding: 0.5em;
+	}
+
+	.review {
+		padding-top: 15em;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar-default .navbar-nav>li>a {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	body {
+		font-size: 17px;
+	}
+
+	.social-grp {
+		width: 60%;
+	}
+
+	.list-products {
+		margin-top: 0em;
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+.btn-shopping {
+	background-color: #e1f2e0;
+	padding: 0.5em 0.8em;
+	color: #493521;
+	font-weight: bold;
+	transition: all 0.5s linear;
+}
+
+.about-us {
+	margin-top: 3em;
+	margin-bottom: 4em;
+}
+
+.title {
+	font-weight: bold;
+	font-family: 'Courgette', cursive;
+	color: #493521;
+	font-size: 1.8em;
+}
+
+.digit {
+	font-size: 4em;
+	line-height: 1.2em;
+	letter-spacing: 5px;
+}
+
+.passion {
+	font-size: 1.2em;
+	word-spacing: 10px;
+	letter-spacing: 2px;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.why {
+	background-image: url('../images/hold-icecream.png');
+	background-repeat: no-repeat;
+	background-position:center bottom;
+	padding: 5em 0px;
+}
+
+.reason-title {
+	font-weight: bold;
+	color: #493521;
+	font-size: 1.1em;
+}
+
+.reason {
+	background-color: white;
+	padding: 1.2em;
+	padding-top: 3em;
+	box-shadow: 0px 0px 10px 2px lightgray;
+	position: relative;
+	margin-top: 100px;
+}
+
+.catolog {
+	padding: 5em 0px;
+	padding-bottom: 0px;
+}
+
+.name-icecream {
+	color: #493521;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.freeship-text1 {
+	color: #e1f2e0;
+	font-size: 2.5em;
+	font-family: 'Courgette', cursive;
+	letter-spacing: 10px;
+}
+
+.freeship-text2 {
+	height: 100%;
+	color: white;
+	font-size: 1.5em;
+	word-spacing: 2px;
+}
+
+.social-item {
+	width: 20%;
+	float: left;
+	padding: 5px;
+}
+
+.review {
+	background-image: url('../images/bg-ic.jpg');
+	background-repeat: no-repeat;
+	background-position:center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 4em;
+}
+
+.review > .container > .row > .text-center > .title {
+	color: white;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+.item {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.item img {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.review-content {
+	color: white;
+}
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.carousel-indicators {
+	bottom: -30px;
+}
+
+.footer-title {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	color: #add8a6;
+	font-weight: bold;
 }

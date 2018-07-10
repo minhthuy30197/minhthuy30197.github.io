@@ -15,8 +15,9 @@
 	padding: 0px 15px;
 }
 
-.content-text-blog img {
-	float: left;
-	padding-right: 2em;
+.img-blog {
+	width: 100%;
+	padding-right: 10%;
+	padding-left: 10%;
 	padding-bottom: 1em;
 }

@@ -97,7 +97,7 @@ function createStarGrp (nums) {
 		result += '<i class="fas fa-star"></i> ';
 	}
 	for (var i = 0; i<half; i++) {
-		result += '<i class="fa fa-star-half-full"></i> ';
+		result += '<i class="fas fa-star-half-alt"></i> ';
 	}
 	for (var i = 0; i<empty; i++) {
 		result += '<i class="far fa-star"></i> ';

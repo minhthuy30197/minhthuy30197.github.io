@@ -50,3 +50,12 @@
 	width: 100%;
 }
 
+@media (max-width: 767px) {
+	.about-left {
+		padding-right: 15px;
+	}
+
+	.img-about {
+		margin-top: 2em;
+	}
+}

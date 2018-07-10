@@ -11,7 +11,7 @@ $(function() {
 		html += '<li class="product" data-id="' + product.id + '"> <div class="col info-product">' +
 		'<div class="img-product"><img src="' + product.img + '" alt="' + product.name + '" class="img-responsive"></div>' +
 		'<div class="info-detail">' + product.name + '</div></div>' +
-		'<div class="col"><span class="price">' + (product.total/product.count) + '</span> VND </div>' + 
+		'<div class="col col-price"><span class="price">' + (product.total/product.count) + '</span> VND </div>' + 
 		'<div class="col"><input type="number" class="form-control" name="quantity" value="' + product.count + '" min="0" title="Quantity" onChange="changeCount(this)"></div>' +
 		'<div class="col"><span class="total">' + product.total + '</span> VND</div>' +
 		'<div class="remove"><button onclick="removeProduct(this)" class="btn btn-remove"><i class="fas fa-times"></i></button></div></li>';

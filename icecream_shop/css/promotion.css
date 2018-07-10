@@ -36,7 +36,7 @@
 }
 
 .info-promo {
-	padding: 3em;
+	padding: 1em;
 	background-color: white;
 	text-align: justify;
 }
@@ -46,4 +46,10 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.2em;
+}
+
+@media (min-width: 992px) {
+	.info-promo {
+		padding: 3em;
+	}
 }

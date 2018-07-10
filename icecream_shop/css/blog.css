@@ -61,3 +61,21 @@
 	text-decoration: none;
 	font-style: italic;
 }
+
+@media (max-width: 499px) {
+	.blog {
+		flex-direction: column;
+		margin-top: 2em;
+	}
+
+	.blog-img, .summary {
+		flex: 1 100%;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 500px){
+	form {
+		width: 60%;
+		margin-left: 40%;
+	}
+}
