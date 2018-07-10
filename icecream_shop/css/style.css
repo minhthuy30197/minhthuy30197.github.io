@@ -476,6 +476,7 @@ body {
 }
 
 .video-text {
+	z-index: 1;
 	color: white;
 	text-align: center;
 	position: absolute;
@@ -494,10 +495,24 @@ body {
 }
 
 .player {
-	background-color: transparent;
 	margin-top: 5%;
 	font-size: 60px;
+	outline: none;
 }
+
+.player button {
+	background-color: transparent;
+}
+
+.play, .pause {
+	width: 100%;
+}
+
+.pause {
+	visibility: hidden;
+	color: #363739;
+}
+
 .video-container {
 	position: absolute;
 	top: 0%;
@@ -510,7 +525,8 @@ body {
 #myVideo {
 	position: absolute;
 	min-width: 100%; min-height: 100%;
-	width: auto; height: auto; z-index: -100;
+	width: auto; height: auto; 
+	z-index: -100;
 }
 
 

@@ -26,6 +26,24 @@ window.onload = function() {
 	getList(specials);
 }
 
+var video = document.querySelector('#myVideo');
+
+function playVideo() {
+	video.play();
+	document.querySelector('.video-title').style.visibility = 'hidden';
+	document.querySelector('.title-video').style.visibility = 'hidden';
+	document.querySelector('.play').style.visibility = 'hidden';
+	document.querySelector('.pause').style.visibility = 'visible';
+}
+
+function pauseVideo() {
+	video.pause();
+	document.querySelector('.video-title').style.visibility = 'visible';
+	document.querySelector('.title-video').style.visibility = 'visible';
+	document.querySelector('.play').style.visibility = 'visible';
+	document.querySelector('.pause').style.visibility = 'hidden';
+}
+
 
 
 
