@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 	<div class="header">
@@ -67,12 +68,32 @@
 			</div>
 		</div>
 		<div class="banner">
-			<div class="name">Dave Gourmet</div>
-			<div class="slogan">Keep Cool Keep Happy</div>
-			<div class="intro-shop">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia.
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="name animated bounceInDown">Dave Gourmet</div>
+						<div class="slogan animated bounceInLeft">Keep Cool Keep Happy</div>
+						<div class="intro-shop  animated bounceInUp">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia.
+						</div> 
+						<a href="shop.html"><button class="btn-shopping animated bounceInRight">Shopping now</button></a>
+					</div>
+					<div class="item">
+						<div class="name animated rollIn">Welcome To Dave Gourmet</div>
+						<div class="slogan  animated rollIn">
+							SWEETY & FRESH
+						</div> 
+						<a href="promotion.html"><button class="btn-shopping animated rollIn">Many promotions</button></a>
+					</div>
+					<div class="item">
+						<div class="slogan animated fadeInLeft">MELT IN HAPPINESS</div>
+						<div class="intro-shop  animated fadeInLeft">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia.
+						</div>
+						<a href="shop.html"><button class="btn-shopping animated bounceInRight">Shopping now</button></a>
+					</div>
+				</div>
 			</div>
-			<a href="shop.html"><button class="btn-shopping">Shopping now</button></a>
 		</div>
 	</div>
 	<div class="about-us container">
