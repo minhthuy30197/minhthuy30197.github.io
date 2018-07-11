@@ -37,7 +37,8 @@
 			"detail": [
 				{
 					"name": "Icecream 1",
-					"count": 1
+					"count": 1,
+					"total": 100000
 				}
 			]
 		}
