@@ -1178,6 +1178,10 @@ button#signin:hover, button#confirmsignup:hover {
 	body {
 		font-size: 18px;
 	}
+
+	.banner {
+		height: 1000px;
+	}
 }
 
 .btn-shopping {
