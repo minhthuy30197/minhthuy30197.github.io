@@ -695,7 +695,6 @@ div#map{
 	right: 1em;
 	font-size: 1.5em;
 	background-color: #add8a6;
-	box-shadow: 0px 0px 5px 1px lightgray;
 	opacity: 0;
 	transition: all 0.5s linear;
 }
