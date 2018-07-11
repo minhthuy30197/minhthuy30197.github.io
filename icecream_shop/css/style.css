@@ -1320,3 +1320,7 @@ button#signin:hover, button#confirmsignup:hover {
 	font-size: 3em;
 	color: white;
 }
+
+.freeship-content > .freeship-btn {
+	padding-top: 0px;
+}
