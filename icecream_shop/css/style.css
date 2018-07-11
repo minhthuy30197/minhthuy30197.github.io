@@ -38,7 +38,7 @@ body {
 	margin: 0 auto;
 	padding-top: 10px;
 	padding-bottom: 5px;
-	transition: all 0.5s linear;
+	transition: all 0.3s linear;
 }
 
 .call-us {
@@ -204,8 +204,8 @@ body {
 
 .overlay-content {
 	position: relative;
-	top: 46%;
-	width: 80%;
+	top: 30%;
+	width: 60%;
 	text-align: center;
 	margin-top: 30px;
 	margin: auto;
@@ -239,7 +239,7 @@ body {
 
 .overlay button {
 	float: left;
-	width: 20%;
+	width: 10%;
 	padding: 15px;
 	background: #add8a6;
 	color: #363739;
@@ -297,7 +297,7 @@ body {
 .our-story a{
 	color: #363739;
 	text-decoration: none;
-	transition: all 0.5s linear;
+	transition: all 0.3s linear;
 }
 
 .our-story a:hover {
@@ -459,7 +459,7 @@ body {
 	height: 100%;
 	opacity: 0;
 	visibility: hidden;
-	transition: all 0.5s linear;
+	transition: all 0.3s linear;
 }
 
 .thumbnail:hover .hover-ice {
@@ -543,7 +543,7 @@ textarea {
 	background-color: #363739;
 	border-radius: 0px;
 	margin-right: 0px;
-	transition: all 0.5s linear;
+	transition: all 0.3s linear;
 }
 
 .btn-submit:hover {
@@ -606,7 +606,7 @@ footer a:hover {
 
 .img-footer img {
 	opacity: 0.6;
-	transition: all 0.5s linear;
+	transition: all 0.3s linear;
 }
 
 .img-footer img:hover {
@@ -696,7 +696,7 @@ div#map{
 	font-size: 1.5em;
 	background-color: #add8a6;
 	opacity: 0;
-	transition: all 0.5s linear;
+	transition: all 0.3s linear;
 }
 
 .shopping-cart a {
@@ -1188,7 +1188,7 @@ button#signin:hover, button#confirmsignup:hover {
 	padding: 0.5em 0.8em;
 	color: #493521;
 	font-weight: bold;
-	transition: all 0.5s linear;
+	transition: all 0.3s linear;
 }
 
 .about-us {
