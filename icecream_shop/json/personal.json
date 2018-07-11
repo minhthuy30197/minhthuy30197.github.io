@@ -22,7 +22,7 @@
 					"total": 78500
 				},
 				{
-					"name": "Icecream 3",
+					"name": "Icecream 5",
 					"count": 1,
 					"total": 178500
 				}
@@ -36,7 +36,7 @@
 			"state": "Received",
 			"detail": [
 				{
-					"id": "ic1",
+					"name": "Icecream 1",
 					"count": 1
 				}
 			]
