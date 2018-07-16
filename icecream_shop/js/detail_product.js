@@ -89,3 +89,10 @@ function star(pos) {
 		stars[i].classList.add('far');
 	}
 }
+
+function clickimg(img) {
+	console.log("swap img")
+	var tmp = document.querySelector('.big-img > img').src;
+	document.querySelector('.big-img > img').src = img.querySelector('img').src;
+	img.querySelector('img').src = tmp;
+}

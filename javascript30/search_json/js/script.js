@@ -3,30 +3,6 @@ let infos = [];
 let input = document.getElementById('search');
 let suggestion = document.querySelector('.suggestion');
 
-input.addEventListener('change', displayInfo);
-input.addEventListener('keyup', displayInfo);
-
-fetch(endpoint) 
-.then(obj => obj.json())
-.then(data => infos.push(...data));
-
-function matchInfo(findContent) {
-	let regex = new RegExp(findContent,'gi');
-	let result = infos.filter(info => info.name.match(regex));
-	return result;
-}
-
-function displayInfo() {
-	let results = matchInfo(this.value);
-	let html = '';
-	if (results.length != 0 && input.value != '') {
-		results.forEach(result => {
-			html += '<li class="sug-item"><div class="name">'+result.name+'</div><div class="age">'+result.age+'</div><div class="clear"></div></li>';
-		});
-	}
-	suggestion.innerHTML = html;
-}
-
 let items = document.querySelectorAll('.drop-item');
 let nav = document.querySelector('.menu');
 let background = document.querySelector('.background');

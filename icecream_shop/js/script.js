@@ -225,3 +225,37 @@ $('#tab2').on('click' , function(){
 	$('#tab2').addClass('signup-shadow');
 	$('#tab1').removeClass('login-shadow');
 });
+
+const endpoint3 = "https://cdn.rawgit.com/minhthuy30197/minhthuy30197.github.io/25b87e86/icecream_shop/json/icecreams.json";
+var ices = [];
+fetch(endpoint3) 
+.then(obj => obj.json())
+.then(data => ices.push(...data));
+
+let input = document.getElementById('search');
+let suggestion = document.querySelector('.suggestion');
+
+input.addEventListener('change', displayInfo);
+input.addEventListener('keyup', displayInfo);
+
+function matchInfo(findContent) {
+	let regex = new RegExp(findContent,'gi');
+	let result = ices.filter(info => info.name.match(regex));
+	return result;
+}
+
+function displayInfo() {
+	let results = matchInfo(this.value);
+	let html = '';
+	if (results.length != 0 && input.value != '') {
+		results.forEach(result => {
+			html += '<li><a href="detail_product.html?id='+result.id+'" class="sug-item"><div class="img-search"><img class="img-responsive" src="'+result.img+'"/></div><div class="name-item">'+result.name+'</div></div></a></li>';
+		});
+	} else {
+		if (results.length == 0) {
+			html += '<li class="no-result"><a href="shop.html">No result! Click here to see more products</a></li>';
+		}
+	}
+	suggestion.innerHTML = html;
+}
+

@@ -993,6 +993,58 @@ button#signin:hover, button#confirmsignup:hover {
 	}
 }
 
+.suggestion {
+	position: absolute;
+	overflow: auto;
+	list-style-type: none;
+	top: 100%;
+	max-height: 200px;
+	width: 80%;
+}
+
+.sug-item {
+	background-color: white;
+	border: solid 1px #eee;
+	border-top: none;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.no-result {
+	background-color: white;
+	align-items: center;
+	width: 100%;
+	border: solid 1px #eee;
+	border-top: none;
+	padding: 1vw;
+}
+
+.no-result:hover {
+	background-color: #e1f2e0;
+}
+
+.no-result a{
+	color: #363739;
+	text-decoration: none;
+}
+
+.name-item {
+	flex: 2;
+	color: #363739;
+	text-align: left;
+}
+
+.img-search {
+	flex: 1;
+}
+
+.sug-item:hover {
+	text-decoration:  none;
+	color: #363739;
+	background-color: #e1f2e0;
+}
+
 @media (min-width: 500px) {
 	body {
 		font-size: 15px;
@@ -1148,6 +1200,14 @@ button#signin:hover, button#confirmsignup:hover {
 
 	.social-grp {
 		width: 80%;
+	}
+
+	.name-item {
+		flex: 5;
+	}
+
+	.img-search {
+		flex: 1;
 	}
 }
 
@@ -1325,3 +1385,4 @@ button#signin:hover, button#confirmsignup:hover {
 .freeship-content > .freeship-btn {
 	padding-top: 0px;
 }
+
