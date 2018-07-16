@@ -76,3 +76,7 @@ input, textarea {
 		margin-top: 3em;
 	}
 }
+
+input[type=tel] {
+	width: 100%;
+}
