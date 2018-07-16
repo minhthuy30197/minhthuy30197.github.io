@@ -532,6 +532,7 @@ ol {
 
 input[type=text], input[type=email], textarea {
 	width: 100%;
+	padding: 1%;
 }
 
 textarea {

@@ -79,4 +79,5 @@ input, textarea {
 
 input[type=tel] {
 	width: 100%;
+	padding: 1%;
 }

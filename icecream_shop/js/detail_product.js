@@ -75,3 +75,17 @@ function addProduct(button) {
 		addToCart(button, Number(input.value));
 	}
 }
+
+function star(pos) {
+	console.log(pos);
+	var stars = document.querySelectorAll('.star-rating > i');
+	for (var i=0; i<pos; i++) {
+		console.log(stars[i])
+		stars[i].classList.remove('far');
+		stars[i].classList.add('fas');
+	}
+	for (var i=pos; i<stars.length; i++) {
+		stars[i].classList.remove('fas');
+		stars[i].classList.add('far');
+	}
+}
